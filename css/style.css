@@ -6,6 +6,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
 
 /*-- Reset Code --*/
+.gly_white{
+    color: #fff
+}
+
 
 body {
     padding: 0;
@@ -740,11 +744,11 @@ p.copy-right-grids a:hover {
 }
 
 a.service-button {
-    color: #45a6f5;
+    color: #f06d31;
 }
 
 a.service-button:hover {
-    color: #fff;
+    color: rgb(231, 104, 31);
 }
 
 .wthree_agile_us:hover .wthree_features_grid {
