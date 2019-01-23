@@ -3272,3 +3272,112 @@ li.subitem1 p {
 }
 
 /*--//responsive--*/
+
+.btn{
+    width: 90px;
+    height: 50px;
+    background-color: #eb7608;
+    color: #fff;
+}
+
+ul.resp-tabs-list{
+    text-align: center;
+}
+.resp-tabs-list li {
+    font-weight: 600;
+    font-size: 16px;
+    display: inline-block;
+    padding: 13px 30px;
+    margin: 0;
+    list-style: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+.resp-tabs-list li {
+    padding: 11px 26px;
+}
+
+.resp-tabs-list li {
+    font-size: 15px;
+}
+
+.resp-tabs-container {
+    padding: 0px;
+    background-color: #fff;
+    clear: left;
+}
+h2.resp-accordion {
+cursor: pointer;
+padding: 5px;
+display: none;
+font-size: 14px;
+border: 1px solid;
+background:#ea1d5d;
+}
+.resp-tab-content {
+display: none;
+padding:0px 0px 15px;
+}
+.resp-tab-active {
+border: 1px solid #c1c1c1;
+border-bottom: none;
+margin-bottom: -1px !important;
+}
+.resp-tab-active {
+    border: none;
+    background-color: #ea1d5d !important;
+    color: #000;
+}
+.resp-content-active,
+.resp-accordion-active { display: block; }
+.resp-tab-content { border:none; }
+h2.resp-accordion {
+font-size: 14px;
+border: 1px solid #c1c1c1;
+border-top: 0px solid #c1c1c1;
+margin: 0px;
+padding: 10px 15px;
+color: #000;
+}
+h2.resp-tab-active {
+border-bottom: 0px solid #c1c1c1 !important;
+margin-bottom: 0px !important;
+padding: 10px 15px !important;
+font-size: 14px;
+}
+h2.resp-tab-title:last-child {
+border-bottom: 12px solid #c1c1c1 !important;
+background: blue;
+}
+/*-----------Accordion styles-----------*/
+h2.resp-tab-active { background:#c1c1c1!important; }
+.resp-easy-accordion h2.resp-accordion { display: block; }
+.resp-easy-accordion .resp-tab-content { border: 1px solid #c1c1c1; }
+.resp-easy-accordion .resp-tab-content:last-child { border-bottom: 1px solid #c1c1c1 !important; }
+.resp-jfit {
+width: 100%;
+margin: 0px;
+}
+.resp-tab-content-active { display: block; }
+h2.resp-accordion:first-child { border-top: 1px solid #c1c1c1 !important; }
+
+@media(max-width: 1680px) {
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light.sticky-nav {
+        width: 100%;
+    }
+}
+
+@media(max-width: 1600px) {}
+
+@media(max-width: 1440px) {
+    .resp-tabs-list {
+        width: 100%;
+    }
+}
+
+@media(max-width: 1366px) {
+    .resp-tabs-list {
+        width: 100%;
+    }
+}
