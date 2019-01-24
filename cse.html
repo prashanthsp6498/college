@@ -49,6 +49,7 @@
   <script>
     $(document).ready(function(){
       $('#staff').hide();
+      $('.infra').hide();
       $('#staf').on('click',function(){
         $('.cont').hide();
         $('#staff').show();
@@ -58,8 +59,12 @@
       $('#home').on('click',function(){
         $('.cont').show();
         $('#staff').hide();
-        
+      });
 
+      $('#infrastruct').on('click',function(){
+        $('.infra').show();
+        $('#staff').hide();
+        $('.cont').hide();
       });
     });
   </script>
@@ -213,7 +218,9 @@
   <div id="horizontalTab navbar navbar-expand-lg navbar-light bg-light sticky-nav">
     <ul class="resp-tabs-list justify-content-center nav nav-pills" >
       <li><button class="btn" id="home"><h3>Home</h3></button></li>
+      <li><button class="btn" id="infrastruct"><h3>Infrastructure</h3></button></li>
       <li><button class="btn" id="staf"><h3>Staff</h3></button></li>
+      <li><button class="btn" id="activies"><h3>Activities</h3></button></li>
       <li><button class="btn" id="gallery"><h3>Gallery</h3></button></li>
       <li><button class="btn" id="contact"><h3>Contact</h3></button></li>
     </ul>
@@ -242,7 +249,7 @@
     <div class="col-md-4">
       <div style="text-align:center;">
         <img style="margin-top:10px" src="images/n1.jpg"  class="img-thumbnail" alt="Cinque Terre"> 
-        <p style="margin-top:2px;color: black"><strong>Lakshmi Durga</strong> </p>
+        <p style="margin-top:2px;color: black"><strong>Prof. Lakshmi Durga</strong> </p>
         <p style="color: black">BE,M.Tech,(Ph.d)</p>
         <p style="color: black"><strong>Professor and Head</strong></p>
         <p style="color: black"><strong>Department of Computer Science and Engineering</strong></p>
@@ -257,7 +264,7 @@
         <div class="col-md-3 ">
           <div style="text-align:center">
             <img style="margin-top:10px" src="images/t4.jpg"  class="img-thumbnail" alt="Cinque Terre"> 
-             <p style="margin-top:2px;color: black"><strong>Name</strong> </p>
+             <p style="margin-top:2px;color: black"><strong>Prof. Name</strong> </p>
              <p style="color: black">BE,M.Tech,(Ph.d)</p>
              <p style="color: black"><strong>Professor and Head</strong></p>
           </div>
@@ -265,7 +272,7 @@
         <div class="col-md-3 ">
           <div style="text-align:center">  
             <img style="margin-top:10px" src="images/t2.jpg"  class="img-thumbnail" alt="Cinque Terre"> 
-            <p style="margin-top:2px;color: black"><strong>Name</strong> </p>
+            <p style="margin-top:2px;color: black"><strong>Prof. Name</strong> </p>
             <p >Associate Professor</p>
             <p style="color: black">BE,M.Tech,(Ph.d)</p>
           </div>
@@ -273,7 +280,7 @@
         <div class="col-md-3 ">
           <div style="text-align:center">
             <img style="margin-top:10px" src="images/t5.jpg"  class="img-thumbnail" alt="Cinque Terre">
-            <p style="margin-top:2px;color: black"><strong>Name</strong> </p>
+            <p style="margin-top:2px;color: black"><strong>Prof. Name</strong> </p>
             <p>Associate Professor</p>
             <p style="color: black">BE,M.Tech,(Ph.d)</p> 
           </div>
@@ -281,7 +288,7 @@
         <div class="col-md-3 ">
           <div style="text-align:center">
             <img style="margin-top:10px" src="images/t6.jpg"  class="img-thumbnail" alt="Cinque Terre"> 
-            <p style="margin-top:2px;color: black"><strong>Lakshmi Durga</strong> </p>
+            <p style="margin-top:2px;color: black"><strong>Prof. Name</strong> </p>
             <p >Associate Professor</p>
             <p style="color: black">BE,M.Tech,(Ph.d)</p>
           </div>
@@ -291,7 +298,87 @@
   
   <!--end of staff photos-->
   
-  
+  <!--infrastructure-->
+  <div class="infra">
+    <div class="row">
+      <div class="col-md-12"  style="margin-left:30px;margin-top:10px">
+        <h1 style="color:black">Laboratories</h1>
+        <p style="color:black"><strong>setup state-of-art laboratories like</strong></p>
+        <ol style="color:black;margin-left:20px;">
+          <li>Computer System Software & operating system Lab</li>
+          <li>Computer design & analysis of Algorithms Lab</li>
+          <li>Unix system & Web programming Lab</li>
+          <li>Networks Lab</li>
+          <li>Computer Graphics Lab</li>
+          <li>Database Application Lab</li>
+          <li>Microprocessor Lab</li>
+          <li>Data Structures with C/C++ Lab</li>
+          <li>Analog & Digital Electronics lab</li>
+          <li>R&D/Project Lab</li>
+
+        </ol>
+
+      </div>
+    </div><br/><br/>
+    <div class="row" style="margin-left:10px">
+      <div class="col-md-3">
+          <img src="images/team1.jpg" style="height:300px" class="img-thumbnail" alt="Cinque Terre"> 
+      </div>
+      <div class="col-md-3">
+          <img src="images/team2.jpg" style="height:300px" class="img-thumbnail" alt="Cinque Terre"> 
+      </div>
+      <div class="col-md-3">
+          <img src="images/team3.jpg" style="height:300px" class="img-thumbnail" alt="Cinque Terre"> 
+      </div>
+      <div class="col-md-3">
+          <img src="images/team4.jpg" style="height:300px" class="img-thumbnail" alt="Cinque Terre"> 
+      </div>
+    </div><br/><br/>
+    <div class="row" style="margin-left:30px">
+      <div class="col-md-12">
+        <h1 style="color:black">SEMINAR HALL</h1>
+        <p style="color:black; margin-left: 10px">– Seminar Hall fitted audio visual equipment</p>
+      </div>
+    </div><br/><br/>
+    <div class="row" style="margin-left:30px">
+      <div class="col-md-12">
+        <h1 style="color:black">Security Surveillance</h1>
+        <p style="color:black;margin-left:10px">– CCTV surveillance in entire Computer Science block</p><br/><br/>
+        <img style="margin-left:30%" src="images/t5.jpg" class="img-thumbnail" alt="Cinque Terre"> 
+      </div>
+    </div><br/><br/>
+    <div class="row" style="margin-left:30px">
+      <div class="col-md-12">
+        <h1 style="color:black">CLASS ROOMS</h1>
+        <p style="color:black;margin-left:10px">– Lecture halls equipped with multimedia Projectors , CCTV& impartus Video Lecture recording</p><br/><br/>
+        <img style="margin-left:30%" src="images/t5.jpg" class="img-thumbnail" alt="Cinque Terre"> 
+      </div>
+    </div><br/><br/>
+    <div class="row" style="margin-left:30px">
+        <div class="col-md-12">
+          <h1 style="color:black">HOD’s Room, Faculty Rooms & Department Office</h1>
+          <br/><br/>
+          <img style="margin-left:30%" src="images/t5.jpg" class="img-thumbnail" alt="Cinque Terre"> 
+        </div>
+      </div><br/><br/>
+      <div class="row" style="margin-left:30px">
+          <div class="col-md-12">
+            <h1 style="color:black">Department Library</h1>
+            <p style="color:black;margin-left:10px">– Lecture halls equipped with multimedia Projectors , CCTV& impartus Video Lecture recording</p><br/><br/>
+            <div class="row">
+              <div class="col-md-3">
+                  <img style="margin-left:30%" src="images/t5.jpg" class="img-thumbnail" alt="Cinque Terre">
+              </div>
+              <div class="col-md-3">
+                  <img style="margin-left:30%" src="images/t5.jpg" class="img-thumbnail" alt="Cinque Terre">
+              </div>
+              <div class="col-md-3">
+                  <img style="margin-left:30%" src="images/t5.jpg" class="img-thumbnail" alt="Cinque Terre">
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
 
   
 
