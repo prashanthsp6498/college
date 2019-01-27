@@ -50,16 +50,31 @@
     $(document).ready(function(){
       $('#staff').hide();
       $('.infra').hide();
+      $('.gallery').hide();
+      $('.contact').hide();
       $('#staf').on('click',function(){
         $('.cont').hide();
         $('#staff').show();
         $('.infra').hide();
+        $('.contact').hide();
+        $('.gallery').hide();
+
+      });
+
+      $('#contact').on('click',function(){
+        $('.cont').hide();
+        $('#staff').hide();
+        $('.gallery').hide();
+        $('.infra').hide();
+        $('.contact').show();
 
       });
 
       $('#home').on('click',function(){
         $('.cont').show();
         $('#staff').hide();
+        $('.gallery').hide();
+        $('.contact').hide();
         $('.infra').hide();
       });
 
@@ -67,6 +82,13 @@
         $('.infra').show();
         $('#staff').hide();
         $('.cont').hide();
+      });
+
+      $('#gallery').on('click',function(){
+        $('.gallery').show();
+        $('#staff').hide();
+        $('.cont').hide();
+        $('.contact').hide();
       });
     });
   </script>
@@ -383,10 +405,70 @@
   </div>
 
   
+  <!--gallery-->
+  <div class="gallery" style="margin-left:20px">
+    <h1 style="color:black">Gallery</h1>
+    <div class="row" >
+      <div class="col-md-4">
+        <img src="images/am1.jpg" class="img-thumbnail" alt="Cinque Terre"> 
+      </div>
+      <div class="col-md-4">
+          <img src="images/am2.jpg" class="img-thumbnail" alt="Cinque Terre"> 
+      </div>
+      <div class="col-md-4">
+          <img src="images/bg3.jpg" class="img-thumbnail" alt="Cinque Terre"> 
+      </div>
+    </div>
+    <div class="row" style="margin-top:5px">
+        <div class="col-md-4">
+          <img src="images/am1.jpg" class="img-thumbnail" alt="Cinque Terre"> 
+        </div>
+        <div class="col-md-4">
+            <img src="images/am2.jpg" class="img-thumbnail" alt="Cinque Terre"> 
+        </div>
+        <div class="col-md-4">
+            <img src="images/bg3.jpg" class="img-thumbnail" alt="Cinque Terre"> 
+        </div>
+      </div>
+      <div class="row" style="margin-top:5px">
+          <div class="col-md-4">
+            <img src="images/am1.jpg" class="img-thumbnail" alt="Cinque Terre"> 
+          </div>
+          <div class="col-md-4">
+              <img src="images/am2.jpg" class="img-thumbnail" alt="Cinque Terre"> 
+          </div>
+          <div class="col-md-4">
+              <img src="images/bg3.jpg" class="img-thumbnail" alt="Cinque Terre"> 
+          </div>
+      </div>
+  </div>
+<!--endOfGallery-->
 
+  <div class="contact" style="margin-top:10px">
+    <div class="row">
+      <div class="col-md-4">
+        <div style="color:black;text-align: center">
+          <h1>HOD</h1>
+          <pstyle="color:black">Professor and Head</p>
+          <h3 style="color:black">Department of CSE</h3>
+          <p style="color:black">Phone:  0821 4276230</p>
+          <p style="color:black">Email id:hod@mitt.in</p>
 
-
-
+        </div>
+      </div>
+      <div class="col-mg-8">
+          <h2 class="contact-title text-capitalize text-white font-weight-light mb-sm-4 mb-3">our
+              <span class="font-weight-bold">directions</span>
+            </h2>
+            <iframe src="https://www.google.com/maps/place/MIT+Thandavapura/@12.1771936,76.6665354,17z/data=!4m12!1m6!3m5!1s0x3baf68ebcaaf5815:0xccb790eb902050cd!2sMIT+Thandavapura!8m2!3d12.1771936!4d76.6687295!3m4!1s0x3baf68ebcaaf5815:0xccb790eb902050cd!8m2!3d12.1771936!4d76.6687295"></iframe>
+            <div class="conta-posi-w3ls p-4 rounded">
+              <h5 class="text-white font-weight-bold mb-3">Address</h5>
+              <p>25095 Blue Ravine Rd,
+                <span>Diamonds street,</span> California, USA</p>
+            </div>
+      </div>
+    </div>
+  </div>
 
 
 
