@@ -3274,7 +3274,7 @@ li.subitem1 p {
 /*--//responsive--*/
 
 .btn{
-    width: 90px;
+    width: 120px;
     height: 50px;
     background-color: #eb7608;
     color: #fff;
@@ -3380,4 +3380,68 @@ h2.resp-accordion:first-child { border-top: 1px solid #c1c1c1 !important; }
     .resp-tabs-list {
         width: 100%;
     }
+}
+
+
+.mitt_box{
+    border-width: px;
+    border-style: groove;
+    margin-left:50px;
+    margin-top:20px;
+    padding-top:10px;
+    padding-left:30px;
+    list-style-type: circle;
+    
+}
+.mitt_list{
+    color:green;
+    list-style-type: disc;
+}
+
+.mang_info{
+    margin-top:10px;
+    margin-left:70px;
+
+}
+.mang_info_list{
+    list-style-type: square;
+}
+
+.side_bar{
+    margin-top:40px;
+}
+
+.side_bar_list{
+    list-style-type: initial;
+}
+
+.vision{
+    width:700px;
+    border-style: groove;
+    
+
+}
+
+.vision_head{
+    color:white;
+    background:#f06d31;
+}
+.vision_body{
+    padding:9px;10px;10px;10px;
+}
+
+.mission{
+    width:700px;
+    margin-top:20px;
+    border-style: groove;
+    
+
+}
+
+.mission_head{
+    color:white;
+    background:#f06d31;
+}
+.mision_body{
+    padding:9px;10px;10px;10px;
 }
