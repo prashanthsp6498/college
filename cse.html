@@ -25,7 +25,122 @@
 		function hideURLbar() {
 			window.scrollTo(0, 1);
 		}
-	</script>
+  </script>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById('myModal');
+    
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById('myImg');
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+      modal.style.display = "none";
+    }
+    </script>
+  
+
+  <!-- This is for Displaying the original pic for Gallary-->
+  <style>
+ 
+   #myImg {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      
+      #myImg:hover {opacity: 0.7;}
+      
+      /* The Modal (background) */
+      .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+      }
+      
+      /* Modal Content (image) */
+      .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+      }
+      
+      /* Caption of Modal Image */
+      #caption {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        color: #ccc;
+        padding: 10px 0;
+        height: 150px;
+      }
+      
+      /* Add Animation */
+      .modal-content, #caption {  
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+      }
+      
+      @-webkit-keyframes zoom {
+        from {-webkit-transform:scale(0)} 
+        to {-webkit-transform:scale(1)}
+      }
+      
+      @keyframes zoom {
+        from {transform:scale(0)} 
+        to {transform:scale(1)}
+      }
+      
+      /* The Close Button */
+      .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color:#fff;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+      
+      .close:hover,
+      .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      
+      /* 100% Image Width on Smaller Screens */
+      @media only screen and (max-width: 700px){
+        .modal-content {
+          width: 100%;
+        }
+      }
+      </style>
+
 	<!--// Meta tag Keywords -->
 
 	<!-- Custom-Files -->
@@ -268,10 +383,11 @@
     </ul>
   </div>
   <br/>
-  <h1 style="margin-left: 30px;color:black">ABOUT OUR DEPARTMENT</h1>
+ 
   
   <div class="row cont">
     <div class="col-md-7" style="margin-left:30px">
+      <h1 style="margin-left: 20px;color:black">ABOUT OUR DEPARTMENT</h1>
       <br/><br/>
       <p style="color:black">
         Nothing is exciting in these times as the field of Computer Science. 
@@ -303,6 +419,7 @@
     <!--staff photos-->
     
       <div class="row " id="staff">
+       
         <div class="col-md-3 ">
           <div style="text-align:center">
             <img style="margin-top:10px" src="images/t4.jpg"  class="img-thumbnail" alt="Cinque Terre"> 
@@ -344,9 +461,10 @@
   <div class="infra">
     <div class="row">
       <div class="col-md-12"  style="margin-left:30px;margin-top:10px">
-        <h1 style="color:black">Laboratories</h1>
-        <p style="color:black"><strong>setup state-of-art laboratories like</strong></p>
-        <ol style="color:black;margin-left:20px;">
+        <h1 style="color:black;font-size: 40px;">Our Infrastructure and Laboratories</h1>
+       <!--<p style="color:black;margin-left:10px "><strong>setup state-of-art laboratories like</strong></p>--> 
+        <ol style="color:black;margin-left:20px;font-size:20px; ">
+          <br><br>
           <li>Computer System Software & operating system Lab</li>
           <li>Computer design & analysis of Algorithms Lab</li>
           <li>Unix system & Web programming Lab</li>
@@ -426,12 +544,13 @@
   <!--gallery-->
   <div class="gallery" style="margin-left:20px">
     <h1 style="color:black">Gallery</h1>
+    <br><br>
     <div class="row" >
       <div class="col-md-4">
-        <img src="images/am1.jpg" class="img-thumbnail" alt="Cinque Terre"> 
+        <img id="myImg" src="images/am1.jpg" alt="Something" class="img-thumbnail" alt="Cinque Terre"> 
       </div>
       <div class="col-md-4">
-          <img src="images/am2.jpg" class="img-thumbnail" alt="Cinque Terre"> 
+          <img id="myImg" src="images/am2.jpg" alt="Something" class="img-thumbnail" alt="Cinque Terre"> 
       </div>
       <div class="col-md-4">
           <img src="images/bg3.jpg" class="img-thumbnail" alt="Cinque Terre"> 
@@ -458,8 +577,43 @@
           <div class="col-md-4">
               <img src="images/bg3.jpg" class="img-thumbnail" alt="Cinque Terre"> 
           </div>
+       </div>
+
+
+      <!-- Picture Enlarge-->
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
       </div>
-  </div>
+      
+       <script>
+      // Get the modal
+      var modal = document.getElementById('myModal');
+      
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById('myImg');
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+      
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+      
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() { 
+        modal.style.display = "none";
+      }
+      </script>
+      
+  
+  
+    </div>
 <!--endOfGallery-->
 
   <div class="contact" style="margin-top:10px">
@@ -488,7 +642,7 @@
     </div>
   </div>
 
-
+<br><br><br>
 
 
 
@@ -505,8 +659,9 @@
 					<iframe src="https://www.google.com/maps/place/MIT+Thandavapura/@12.1771936,76.6665354,17z/data=!4m12!1m6!3m5!1s0x3baf68ebcaaf5815:0xccb790eb902050cd!2sMIT+Thandavapura!8m2!3d12.1771936!4d76.6687295!3m4!1s0x3baf68ebcaaf5815:0xccb790eb902050cd!8m2!3d12.1771936!4d76.6687295"></iframe>
 					<div class="conta-posi-w3ls p-4 rounded">
 						<h5 class="text-white font-weight-bold mb-3">Address</h5>
-						<p>25095 Blue Ravine Rd,
-							<span>Diamonds street,</span> California, USA</p>
+						<p>MIT Thandavapura,
+            Just off NH 766,
+            <span>Nanjanagudu taluk,</span> Mysore district 571302</p>
 					</div>
 				</div>
 				<div class="col-lg-6 contact-agileits-w3layouts mt-lg-0 mt-4">
@@ -536,8 +691,8 @@
 		<div class="copyright-agiles py-3">
 			<div class="container">
 				<div class="row">
-					<p class="col-lg-8 copy-right-grids text-white text-lg-left text-center mt-lg-1">© 2018 Edulearn. All Rights Reserved | Design by
-						<a href="https://w3layouts.com/" target="_blank">W3layouts</a>
+					<p class="col-lg-8 copy-right-grids text-white text-lg-left text-center mt-lg-1">© 2019 MITT. All Rights Reserved | Design by
+						<a href="#" target="_blank">Aviato</a>
 					</p>
 					<!-- social icons -->
 					<div class="social-icons text-lg-right text-center col-lg-4 mt-lg-0 mt-3">
