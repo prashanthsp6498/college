@@ -3445,3 +3445,7 @@ h2.resp-accordion:first-child { border-top: 1px solid #c1c1c1 !important; }
 .mision_body{
     padding:9px;10px;10px;10px;
 }
+
+#mail{
+	border-radius:50%;
+}
