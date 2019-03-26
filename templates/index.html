@@ -19,21 +19,57 @@
 			window.scrollTo(0, 1);
 		}
 	</script>
+<style>
+.dropbtn {
+  background-color: #eb9423;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #eb9423;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #eb9423;}
+</style>
 
 	<!--// Meta tag Keywords -->
 
 	<!-- Custom-Files -->
 	<!-- Bootstrap-Core-Css -->
-	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="{{ url_for('static',filename='css/bootstrap.css') }}">
 	<!-- Testimonials-Css -->
-	<link href="css/mislider.css" rel="stylesheet" type="text/css" />
-	<link href="css/mislider-custom.css" rel="stylesheet" type="text/css" />
+	<link href="{{ url_for('static',filename='css/mislider.css') }}" rel="stylesheet" type="text/css" />
+	<link href="{{ url_for('static',filename='css/mislider-custom.css') }}" rel="stylesheet" type="text/css" />
 	<!-- Style-Css -->
-	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css" media="all" />
 	<!-- Font-Awesome-Icons-Css -->
-	<link rel="stylesheet" href="css/fontawesome-all.css">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/fontawesome-all.css') }}">
 	<!-- //Custom-Files -->
-	<link rel="stylesheet" href="temp.css">
+	<link rel="stylesheet" href="url_for('static',filename='temp.css')}}">
 	<!-- Web-Fonts -->
 	<link href="//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
 	 rel="stylesheet">
@@ -54,11 +90,11 @@
 						<i class="fas fa-book text-dark bg-white p-2 rounded-circle mr-3"></i>welcome to MIT,Thandavpura</h1>
 	
 					<a style="color:white;margin-left:2px;" href="mailto:Webmail@mitt.edu.in">
-					<img src="images/header/mail.png" id="mail" style="col-4" width="40px" height="30px" />
+					<img src="url_for('static',filename='images/header/mail.png')}}" id="mail" style="col-4" width="40px" height="30px" />
 						webmail.edu.in</a>			
 
 					<a style="color:white;margin-left:90px;" href="http://45.112.139.194:8088">
-					<img src="images/header/portal.png" id="mail" style="col-4" width="40px" height="30px" />
+					<img src="{{ url_for('static', filename='images/header/portal.png')}}" id="mail" style="col-4" width="40px" height="30px" />
 					 Student Portal</a>
 					<!-- social icons -->
 					<div class="social-icons text-right col-3">
@@ -130,6 +166,7 @@
 		</div>
 
 		<!-- navigation -->
+
 		<div class="navigation-w3ls" >
 			<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-nav">
 				<button class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -143,8 +180,10 @@
 								<span class="sr-only">(current)</span>
 							</a>
 						</li>
+
 						<li class="nav-item dropdown" style="margin-left:50px">
-							<a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<a class="nav-link dropdown-toggle text-white" 
+							href="/" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								About Us
 							</a>
 									<div class="dropdown-menu">
@@ -165,12 +204,11 @@
 
 						</li>
 						<li class="nav-item dropdown" style="margin-left:50px">
-							<a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								Departments
-							</a>
-									<div class="dropdown-menu">
+							<div class="dropdown">
+								  <button class="dropbtn">Departments</button>
+								  
+								    <div class="dropdown-content">
 
-											<div class="dropdown-divider"></div>
 											<a class="dropdown-item" href="cse.html">Compute Science And Engineering</a>
 											<div class="dropdown-divider"></div>
 											<a class="dropdown-item" href="ece.html">Electronics and Communication Engineering</a>
@@ -185,14 +223,31 @@
 											<div class="dropdown-divider"></div>
 											<a class="dropdown-item" href="social_media.html">Chemisry</a>
 											<div class="dropdown-divider"></div>
-											<a class="dropdown-item" href="social_media.html">Mathematics</a> 
-									</div>
-							
-							
-						
-
+											<a class="dropdown-item" href="social_media.html">Mathematics</a>
+											</div> 
+								  </div>
+							</div>
 						</li>
+
 						<li class="nav-item dropdown" style="margin-left:50px">
+							<div class="dropdown nav-link">
+								  <button class="dropbtn">Campus Life</button>
+								  <div class="dropdown-content">
+					
+								<a class="dropdown-item" href="mitt.html">Library & Information Center</a>
+								<a class="dropdown-item" href="index.html">Training & Placements</a>
+								<a class="dropdown-item" href="login.html">Sports</a>
+								<a class="dropdown-item" href="register.html">Gallery</a>
+								
+
+								<a class="dropdown-item" href="#">
+								Facility
+								</a>
+								  </div>
+							</div>
+						</li>
+						
+					<!--	<li class="nav-item dropdown" style="margin-left:50px">
 							<a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								Campus Life
 							</a>
@@ -213,7 +268,7 @@
 							</div>
 
 							</div>
-						</li>
+						</li>-->
 						<li class="nav-item" style="margin-left:50px">
 							<a class="nav-link text-white" href="commitee.html">Committee</a>
 						</li>
