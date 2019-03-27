@@ -60,16 +60,16 @@
 
 	<!-- Custom-Files -->
 	<!-- Bootstrap-Core-Css -->
-	<link rel="stylesheet" href="{{ url_for('static',filename='css/bootstrap.css') }}">
+	<link rel="stylesheet" href="css/bootstrap.css">
 	<!-- Testimonials-Css -->
-	<link href="{{ url_for('static',filename='css/mislider.css') }}" rel="stylesheet" type="text/css" />
-	<link href="{{ url_for('static',filename='css/mislider-custom.css') }}" rel="stylesheet" type="text/css" />
+	<link href="css/mislider.css" rel="stylesheet" type="text/css" />
+	<link href="css/mislider-custom.css" rel="stylesheet" type="text/css" />
 	<!-- Style-Css -->
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
 	<!-- Font-Awesome-Icons-Css -->
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/fontawesome-all.css') }}">
+	<link rel="stylesheet" href="css/fontawesome-all.css">
 	<!-- //Custom-Files -->
-	<link rel="stylesheet" href="url_for('static',filename='temp.css')}}">
+	<link rel="stylesheet" href="temp.css">
 	<!-- Web-Fonts -->
 	<link href="//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
 	 rel="stylesheet">
@@ -83,35 +83,35 @@
 	<!-- header -->
 	<header>
 		<!-- top header -->
-		<div class="top-head-w3ls py-2 bg-dark">
+		<div  style="margin-top:5px" class="top-head-w3ls py-2 navbar-expand-lg">
 			<div class="container">
 				<div class="row">
-					<h1 class="text-capitalize text-white col-4" >
+					<img class="img-rounded" src="images/met_logo.jpg" width="100px" height="50px"/>
+					<h1 class="text-capitalize  col-4" >
 						<i class="fas fa-book text-dark bg-white p-2 rounded-circle mr-3"></i>welcome to MIT,Thandavpura</h1>
 	
-					<a style="color:white;margin-left:2px;" href="mailto:Webmail@mitt.edu.in">
-					<img src="url_for('static',filename='images/header/mail.png')}}" id="mail" style="col-4" width="40px" height="30px" />
-						webmail.edu.in</a>			
+					<a style="color:black;margin-left:2px;" href="mailto:Webmail@mitt.edu.in">
+					<img src="images/header/mail.png" id="mail" style="col-4" width="40px" height="30px" />
+						<span style="font-size: 15px">webmail.edu.in</span></a>			
 
-					<a style="color:white;margin-left:90px;" href="http://45.112.139.194:8088">
-					<img src="{{ url_for('static', filename='images/header/portal.png')}}" id="mail" style="col-4" width="40px" height="30px" />
-					 Student Portal</a>
+					<a style="color:black;margin-left:90px;" href="http://45.112.139.194:8088">
+					<img src="images/header/portal.png" id="mail" style="col-4" width="40px" height="30px" />
+					 <span style="font-size: 15px">Student Portal</span></a>
 					<!-- social icons -->
-					<div class="social-icons text-right col-3">
+					<div  class="social-icons text-right col-3" style="margin-right:2px">
 						<ul class="list-unstyled">
 							<li>
-								<a href="#" class="fab fa-facebook-f icon-borde facebook rounded-circle"> </a>
+								<a style="background: orange;margin-top:-15px" href="#" class="fab fa-facebook icon-borde facebook rounded-circle"> </a>
 							</li>
 							<li class="mx-2">
-								<a href="#" class="fab fa-twitter icon-border twitter rounded-circle"> </a>
+								<a style="background: orange;margin-top:-15px" href="#" class="fab fa-twitter icon-border twitter rounded-circle"> </a>
 							</li>
 							<li>
-								<a href="#" class="fab fa-google-plus-g icon-border googleplus rounded-circle"> </a>
+								<a style="background: orange;margin-top:-15px" href="#" class="fab fa-youtube icon-border youtube rounded-circle"> </a>
 							</li>
-							<li class="ml-2">
-								<a href="#" class="fas fa-rss icon-border rss rounded-circle"> </a>
-							</li>
+							<img style="margin-right:5px;margin-left: 15px" class="img-rounded" src="images/mitt_logo.jpg" width="100px" height="50px"/>
 						</ul>
+
 					</div>
 					<!-- //social icons -->
 				</div>
@@ -168,123 +168,107 @@
 		<!-- navigation -->
 
 		<div class="navigation-w3ls" >
-			<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-nav">
-				<button class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-				 aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
-					<ul class="navbar-nav justify-content-center" style="margin-left:50px">
-						<li class="nav-item active">
-							<a class="nav-link text-white" href="index.html">Home
-								<span class="sr-only">(current)</span>
-							</a>
-						</li>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-nav">
+        <button class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+         aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+          <ul class="navbar-nav justify-content-center" style="margin-left:50px">
+            <li class="nav-item active">
+              <a class="nav-link text-white" href="index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item dropdown" style="margin-left:50px">
+              <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About Us
+              </a>
+                  <div class="dropdown-menu">
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="mitt.html">MITT</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="aboutUs.html">About MITT</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="aboutTrust.html">About Trust</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="visionAndMission.html">Vision and Mission</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">About Trustees</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="aboutPrinipal.html">About Principal</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Governing Council</a>
 
-						<li class="nav-item dropdown" style="margin-left:50px">
-							<a class="nav-link dropdown-toggle text-white" 
-							href="/" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								About Us
-							</a>
-									<div class="dropdown-menu">
-											<div class="dropdown-divider"></div>
-											<a class="dropdown-item" href="mitt.html">MITT</a>
-											<div class="dropdown-divider"></div>
-											<a class="dropdown-item" href="aboutUs.html">About MITT</a>
-											<div class="dropdown-divider"></div>
-											<a class="dropdown-item" href="aboutTrust.html">About Trust</a>
-											<div class="dropdown-divider"></div>
-											<a class="dropdown-item" href="visionAndMission.html">Vision and Mission</a>
-											<div class="dropdown-divider"></div>
-											<a class="dropdown-item" href="#">About Trustees</a>
-											<div class="dropdown-divider"></div>
-											<a class="dropdown-item" href="aboutPrinipal.html">About Principal</a>
-											<div class="dropdown-divider"></div>
-											<a class="dropdown-item" href="#">Governing Council</a>
+            </li>
+            <li class="nav-item dropdown" style="margin-left:50px">
+              <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Departments
+              </a>
+                  <div class="dropdown-menu">
 
-						</li>
-						<li class="nav-item dropdown" style="margin-left:50px">
-							<div class="dropdown">
-								  <button class="dropbtn">Departments</button>
-								  
-								    <div class="dropdown-content">
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="cse.html">Compute Science And Engineering</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="ece.html">Electronics and Communication Engineering</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="ise.html">Information Science and Engineering</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="mech.html">Mechanical Engineering</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="civil.html">Civil Engineering</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="social_media.html">Physics</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="social_media.html">Chemisry</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="social_media.html">Mathematics</a> 
+                  </div>
+              
+              
+            
 
-											<a class="dropdown-item" href="cse.html">Compute Science And Engineering</a>
-											<div class="dropdown-divider"></div>
-											<a class="dropdown-item" href="ece.html">Electronics and Communication Engineering</a>
-											<div class="dropdown-divider"></div>
-											<a class="dropdown-item" href="ise.html">Information Science and Engineering</a>
-											<div class="dropdown-divider"></div>
-											<a class="dropdown-item" href="mech.html">Mechanical Engineering</a>
-											<div class="dropdown-divider"></div>
-											<a class="dropdown-item" href="civil.html">Civil Engineering</a>
-											<div class="dropdown-divider"></div>
-											<a class="dropdown-item" href="social_media.html">Physics</a>
-											<div class="dropdown-divider"></div>
-											<a class="dropdown-item" href="social_media.html">Chemisry</a>
-											<div class="dropdown-divider"></div>
-											<a class="dropdown-item" href="social_media.html">Mathematics</a>
-											</div> 
-								  </div>
-							</div>
-						</li>
+            </li>
+            <li class="nav-item dropdown" style="margin-left:50px">
+              <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Campus Life
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="mitt.html">Library & Information Center</a>
+                <a class="dropdown-item" href="index.html">Training & Placements</a>
+                <a class="dropdown-item" href="login.html">Sports</a>
+                <a class="dropdown-item" href="register.html">Gallery</a>
+                
 
-						<li class="nav-item dropdown" style="margin-left:50px">
-							<div class="dropdown nav-link">
-								  <button class="dropbtn">Campus Life</button>
-								  <div class="dropdown-content">
-					
-								<a class="dropdown-item" href="mitt.html">Library & Information Center</a>
-								<a class="dropdown-item" href="index.html">Training & Placements</a>
-								<a class="dropdown-item" href="login.html">Sports</a>
-								<a class="dropdown-item" href="register.html">Gallery</a>
-								
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Facility
+              </a>
+              <div class="dropdown-menu" style="margin-left: 50px">
+                <a class="dropdown-item" href="mitt.html">Canteen & Information Center</a>
+                <a class="dropdown-item" href="index.html">Transportation</a>
+              
+              </div>
 
-								<a class="dropdown-item" href="#">
-								Facility
-								</a>
-								  </div>
-							</div>
-						</li>
-						
-					<!--	<li class="nav-item dropdown" style="margin-left:50px">
-							<a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								Campus Life
-							</a>
-							<div class="dropdown-menu">
-								<a class="dropdown-item" href="mitt.html">Library & Information Center</a>
-								<a class="dropdown-item" href="index.html">Training & Placements</a>
-								<a class="dropdown-item" href="login.html">Sports</a>
-								<a class="dropdown-item" href="register.html">Gallery</a>
-								
+              </div>
+            </li>
+            <li class="nav-item" style="margin-left:50px">
+              <a class="nav-link text-white" href="commitee.html">Committee</a>
+            </li>
+            <li class="nav-item" style="margin-left:50px">
+              <a class="nav-link text-white" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item" style="margin-left:50px">
+              <a class="nav-link text-white" href="gallery.html">Downloads</a>
+            </li>
+            <li class="nav-item" style="margin-left:50px">
+              <a class="nav-link text-white" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- //navigation -->
 
-								<a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								Facility
-							</a>
-							<div class="dropdown-menu" style="margin-left: 50px">
-								<a class="dropdown-item" href="mitt.html">Canteen & Information Center</a>
-								<a class="dropdown-item" href="index.html">Transportation</a>
-							
-							</div>
-
-							</div>
-						</li>-->
-						<li class="nav-item" style="margin-left:50px">
-							<a class="nav-link text-white" href="commitee.html">Committee</a>
-						</li>
-						<li class="nav-item" style="margin-left:50px">
-							<a class="nav-link text-white" href="gallery.html">Gallery</a>
-						</li>
-						<li class="nav-item" style="margin-left:50px">
-							<a class="nav-link text-white" href="gallery.html">Downloads</a>
-						</li>
-						<li class="nav-item" style="margin-left:50px">
-							<a class="nav-link text-white" href="contact.html">Contact Us</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
-		</div>
 		<!-- //navigation -->
 	</div>
 	<!-- //banner -->
@@ -319,7 +303,7 @@
 					</div>
 				</div>
 				<div class="col-lg-6 left-img-agikes mt-lg-0 mt-sm-4 mt-3 text-right">
-					<img src="images/ab.jpg" alt="" class="img-fluid" />
+					<img src="images/IMG_8342.JPG" alt="" class="img-fluid" />
 
 					<div class="about-bottom text-center p-sm-5 p-4">
 						<ul>
@@ -682,7 +666,7 @@
 
 
 	<!-- news -->
-	<div class="news-section py-5">
+	<!--<div class="news-section py-5">
 		<div class="container py-xl-5 py-lg-3">
 			<h3 class="title text-capitalize font-weight-light text-dark text-center mb-5">our lastest
 				<span class="font-weight-bold">news</span>
@@ -814,7 +798,7 @@
 			</div>
 		</div>
 	</div>
-	<!-- //news -->
+	 //news -->
 
 	
 
@@ -826,34 +810,20 @@
 					<h2 class="contact-title text-capitalize text-white font-weight-light mb-sm-4 mb-3">our
 						<span class="font-weight-bold">directions</span>
 					</h2>
-					<iframe src="https://www.google.com/maps/place/MIT+Thandavapura/@12.1771936,76.6665354,17z/data=!4m12!1m6!3m5!1s0x3baf68ebcaaf5815:0xccb790eb902050cd!2sMIT+Thandavapura!8m2!3d12.1771936!4d76.6687295!3m4!1s0x3baf68ebcaaf5815:0xccb790eb902050cd!8m2!3d12.1771936!4d76.6687295"></iframe>
-					<div class="conta-posi-w3ls p-4 rounded">
-						<h5 class="text-white font-weight-bold mb-3">Address</h5>
-						<p>25095 Blue Ravine Rd,
-							<span>Diamonds street,</span> California, USA</p>
-					</div>
+					<div class="mapouter"><div class="gmap_canvas"><iframe width="454" height="316" id="gmap_canvas" src="https://maps.google.com/maps?q=mit%20thandavapura&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>Werbung: <a href="https://www.jetzt-drucken-lassen.de">jetzt-drucken-lassen.de</a></div><style>.mapouter{position:relative;text-align:right;height:316px;width:454px;}.gmap_canvas {overflow:hidden;background:none!important;height:316px;width:454px;}</style></div>
+					
 				</div>
-				<div class="col-lg-6 contact-agileits-w3layouts mt-lg-0 mt-4">
-					<h4 class="contact-title text-capitalize text-white font-weight-light mb-sm-4 mb-3">get in
-						<span class="font-weight-bold">touch</span>
-					</h4>
-					<p class="conta-para-style border-left pl-4">If you have any questions about the services we provide simply use the form below. We try and respond to all queries
-						and comments within 24 hours.</p>
-					<div class="subscribe-w3ls my-xl-5 my-4">
-						<h6 class="text-white text-capitalize mb-4">subscribe our newsletter</h6>
-						<form action="#" method="post" class="subscribe_form">
-							<input class="form-control" type="email" name="email" placeholder="Enter your email..." required="">
-							<button type="submit" class="btn btn-primary submit">Submit</button>
-						</form>
+				<div style="color:white;font-size: 16px" class="col-lg-6 contact-agileits-w3layouts mt-lg-0 mt-4">
+					<h2>Quick Links</h2><br/><br/>
+					<div style="color:white">
+						<ul style="list-style-type: circle;" >
+						<li><a style="color:white;font-size: 12px" id="lnk" href="#">FACILITIES</a></li> <br/>
+						<li><a style="color:white;font-size: 12px" id="lnk" href="#">STUDENT CLUB</a></li> <br/>
+						<li><a style="color:white;font-size: 12px" id="lnk" href="#">TIME TABLE</a></li> <br/>
+						<li><a style="color:white;font-size: 12px" id="lnk" href="#">E-RESOURCES</a></li> <br/>
+						<li><a style="color:white;font-size: 12px" id="lnk" href="#">DOWNLOADS</a></li> <br/>
+						</ul>
 					</div>
-					<p class="para-agileits-w3layouts text-white">
-						<i class="fas fa-map-marker pr-3"></i>25095 Blue Ravine Rd,USA</p>
-					<p class="para-agileits-w3layouts text-white my-sm-3 my-2">
-						<i class="fas fa-phone pr-3"></i>032 625 4592</p>
-					<p class="para-agileits-w3layouts">
-						<i class="far fa-envelope-open pr-2"></i>
-						<a href="mailto:mail@example.com" class=" text-white">info@example.com</a>
-					</p>
 				</div>
 			</div>
 		</div>
@@ -941,6 +911,14 @@
 	<script src="js/edulearn.js"></script>
 
 	<!-- //Js files -->
+
+	<script>
+		$(document).ready(function(){
+    $("#lnk").on('mouseenter', function(){
+        $("#lnk").show();
+    }); 
+}); 
+	</script>
 
 </body>
 
