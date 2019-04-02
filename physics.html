@@ -167,12 +167,14 @@
       $('.infra').hide();
       $('.gallery').hide();
       $('.contact').hide();
+      $('#activity').hide();
       $('#staf').on('click',function(){
         $('.cont').hide();
         $('#staff').show();
         $('.infra').hide();
         $('.contact').hide();
         $('.gallery').hide();
+        $('#activity').hide();
 
       });
 
@@ -182,6 +184,7 @@
         $('.gallery').hide();
         $('.infra').hide();
         $('.contact').show();
+        $('#activity').hide();
 
       });
 
@@ -191,12 +194,15 @@
         $('.gallery').hide();
         $('.contact').hide();
         $('.infra').hide();
+        $('#activity').hide();
       });
 
       $('#infrastruct').on('click',function(){
         $('.infra').show();
         $('#staff').hide();
         $('.cont').hide();
+        $('#activity').hide();
+        $('.gallery').hide();
       });
 
       $('#gallery').on('click',function(){
@@ -204,6 +210,16 @@
         $('#staff').hide();
         $('.cont').hide();
         $('.contact').hide();
+        $('#activity').hide();
+      });
+
+      $('#activies').on('click',function(){
+        $('.gallery').hide();
+        $('#staff').hide();
+        $('.infra').hide();
+        $('.cont').hide();
+        $('.contact').hide();
+        $('#activity').show();
       });
     });
   </script>
@@ -401,19 +417,40 @@
       <h1 style="margin-left: 20px;color:black">ABOUT OUR DEPARTMENT</h1>
       <br/><br/>
       <p style="color:black">
-        Nothing is exciting in these times as the field of Computer Science. 
-        Being close to India’s Silicon Valley, young bright students are eager to pursue their graduation courses in this field. 
-        Ever since its inception in 1997, the Department has been a pioneering academic center for under graduation and post-graduation in the areas of Computer Science Engineering. 
-        It has assiduously pursued its mission of carrying out leading edge facilities in both foundational and Industry oriented problems.
+        The  Basic Science subjects are pivotal for engineering education. These subjects taught in the first year help in
+        better understanding and application of their respective streams. The Department of Engineering Physics was
+        started from the inception of the college (2016-17) and as a supporting department to all engineering branches
+        of the institution. Its objective is to provide value-based education to the budding engineers. The department is
+        committed to impart thorough basic knowledge about the fundamental aspects of Basic Science in general and
+        Physics in particular relevant to engineering for all the students. The department is well established with a
+        modern laboratory added with advanced devices, equipment and instruments to attract and to motivate young
+        minds to gain the real practical knowledge about the recent trends, practices in engineering and their
+        applications in day-to-day activities to enlighten the professional course of studies. The department has well
+        qualified faculty from the reputed University, thoroughly experienced in teaching, research activities with
+        conference papers published at International and national level Conferences, Workshops and Seminars,
+        effectively involved in teaching oriented developmental activities like Faculty Development Programs, Guest
+        Lectures, Seminars, Workshops and Conferences to gain adequate Knowledge about the subject to uplift the
+        quality of teaching-learning process and to fulfill the expectations of the students community.
+        The Faculty member is also committed to improve study skills, to inculcate discipline, rational thinking,
+        professional ethics and education with humanity among the students.
       </p><br/>
       <p style="color:black;">
-        The department is well equipped with good infrastructure such as latest computers, Laboratory Equipment's, 150 Mbps leased line connection & Wi-Fi Internet connectivity and well qualified faculty members.
+        The strong basic foundation laid by the department helps the students to apply knowledge in a better way  &amp; 
+        become a successful engineer .The unique strength of the department is the excellent coordination in carrying
+        out the academic responsibilities.
       </p><br/>
-      <p style="color:black;">
-        The academic programs of the Department are highly innovative and keenly sought after. 
-        The Department has trained more than a thousand engineers who have distinguished themselves as leading academicians, industry professionals, 
-        and entrepreneurs in several universities and industries in India and abroad.
-      </p>
+      <h1 style="color:black">Mission</h1>
+        <ul style="color:black">
+          <li>To keep pace with advancements in knowledge and make the students competitive and capable at global level.</li><br/>
+          <li>To create an environment for the students to acquire the right physical, intellectual and moral foundations and shine as torchbearers of tomorrows world.</li><br/>
+          <li>To strive to attain ever-higher benchmarks of education excellence.</li><br/>
+        </ul>
+      <h1 style="color: black"> Vission</h1>
+      <p style="color:black">
+        The Department of Engineering Physics impart students with an attitude and a capacity to deal with the
+        principles and methods of analysis of contemporary Physics for solving emerging problems in the field of
+        Technical education and Research .
+      </p> 
     </div>
     <div class="col-md-4">
       <div style="text-align:center;">
@@ -467,7 +504,74 @@
   </div>
   
   <!--end of staff photos-->
-  
+    <!-- activities --->
+  <div id="activity">
+    <div class="row">
+      <div class="col-md-11">
+        <h1>TECHNICAL TALKS ORGANIZED BY DEPARTEMENT</h1><br/>
+        <table style="margin-left:10px;color: black" class="table-bordered" style="text-align: center">
+          <tr>
+            <th style="text-align: center;width: 100px">
+              Sl No
+            </th>
+            <th style="text-align: center;">
+              Resource Person with Training Company Name
+            </th>
+            <th style="text-align: center;">
+              Title
+            </th>
+            <th style="text-align: center;">
+              Participants(semester) With Number
+            </th>
+            <th style="text-align: center;width: 100px">
+              Date
+            </th>
+        </tr>
+        <tr>
+          <td style="text-align: center;width: 100px">
+            1
+          </td>
+          <td style="text-align: center">
+            Dr. Mahadeva Prasad T.N
+          </td>
+          <td style="text-align: center">
+            Maxwell’s Equations.
+          </td>
+          <td style="text-align: center">
+            3rd SEM
+          </td>
+          <td style="text-align:center">
+            5-5-2016
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align:center">
+            2
+          </td>
+          <td style="text-align:center">
+            Dr. Prasanna A A
+          </td>
+          <td style="text-align:center">
+            Some Interesting Aspects of Quantum Mechanics
+          </td>
+          <td style="text-align:center">
+            4rd SEM
+          </td>
+          <td style="text-align:center">
+            5-5-2016
+          </td>
+        </tr>
+                 
+        </table><br/><br/>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!--end of activities -->
+
+
   <!--infrastructure-->
   <div class="infra">
     <div class="row">
