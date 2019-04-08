@@ -132,6 +132,7 @@
         text-decoration: none;
         cursor: pointer;
       }
+
       
       /* 100% Image Width on Smaller Screens */
       @media only screen and (max-width: 700px){
@@ -167,12 +168,14 @@
       $('.infra').hide();
       $('.gallery').hide();
       $('.contact').hide();
+      $('#activity').hide();
       $('#staf').on('click',function(){
         $('.cont').hide();
         $('#staff').show();
         $('.infra').hide();
         $('.contact').hide();
         $('.gallery').hide();
+        $('#activity').hide();
 
       });
 
@@ -181,7 +184,7 @@
         $('#staff').hide();
         $('.gallery').hide();
         $('.infra').hide();
-        $('.contact').show();
+        $('.contact').hide();
 
       });
 
@@ -191,16 +194,25 @@
         $('.gallery').hide();
         $('.contact').hide();
         $('.infra').hide();
+        $('#activity').hide();
       });
 
       $('#infrastruct').on('click',function(){
         $('.infra').show();
         $('#staff').hide();
         $('.cont').hide();
+        $('#activity').hide();
       });
 
       $('#gallery').on('click',function(){
         $('.gallery').show();
+        $('#staff').hide();
+        $('.cont').hide();
+        $('.contact').hide();
+        $('#activity').hide();
+      });
+      $('#activies').on('click',function(){
+        $('#activity').show();
         $('#staff').hide();
         $('.cont').hide();
         $('.contact').hide();
@@ -385,12 +397,12 @@
   
   <div id="horizontalTab navbar navbar-expand-lg navbar-light bg-light sticky-nav">
     <ul class="resp-tabs-list justify-content-center nav nav-pills"  >
-      <li><button class="btn" id="home"><h3>Home</h3></button></li>
-      <li><button class="btn" id="infrastruct"><h3>Infrastructure</h3></button></li>
-      <li><button class="btn" id="staf"><h3>Staff</h3></button></li>
-      <li><button class="btn" id="activies"><h3>Activities</h3></button></li>
-      <li><button class="btn" id="gallery"><h3>Gallery</h3></button></li>
-      <li><button class="btn" id="contact"><h3>Contact</h3></button></li>
+      <li><button class="btn demo" id="home"><h3>Home</h3></button></li>
+      <li><button class="btn demo" id="infrastruct"><h3>Infrastructure</h3></button></li>
+      <li><button class="btn demo" id="staf"><h3>Staff</h3></button></li>
+      <li><button class="btn demo" id="activies"><h3>Activities</h3></button></li>
+      <li><button class="btn demo" id="gallery"><h3>Gallery</h3></button></li>
+      <li><button class="btn demo" id="contact"><h3>Contact</h3></button></li>
     </ul>
   </div>
   <br/>
@@ -401,19 +413,31 @@
       <h1 style="margin-left: 20px;color:black">ABOUT OUR DEPARTMENT</h1>
       <br/><br/>
       <p style="color:black">
-        Nothing is exciting in these times as the field of Computer Science. 
-        Being close to India’s Silicon Valley, young bright students are eager to pursue their graduation courses in this field. 
-        Ever since its inception in 1997, the Department has been a pioneering academic center for under graduation and post-graduation in the areas of Computer Science Engineering. 
-        It has assiduously pursued its mission of carrying out leading edge facilities in both foundational and Industry oriented problems.
+        The Department comprises of skilled and dedicated faculty Positions with Professors. This, combined
+        with the systematic teaching methodology and syllabus in line with the current technology, has ensured
+        excellent results at both examinations as well as competitive examinations by the students, as demonstrated by
+        the long track record of MIT ranks and an outstanding placement record. There are ample opportunities for
+        those inclined towards research as well, with experienced faculty and a wealth of resources. In order to fulfill
+        the objective of achieving academic excellence, the department is equipped with all infrastructure viz. Highly
+        qualified teaching faculty, state-of-the-art computing facilities and a sophisticated library housing voluminous
+        text books and periodicals. In addition, the following common facilities also contribute to the quality of
+        teaching-learning process.
       </p><br/>
+      <h1>Vision</h1><br/>
       <p style="color:black;">
-        The department is well equipped with good infrastructure such as latest computers, Laboratory Equipment's, 150 Mbps leased line connection & Wi-Fi Internet connectivity and well qualified faculty members.
+        “Architect Dedicated and Skilled Technocrats to compute the future”
       </p><br/>
-      <p style="color:black;">
-        The academic programs of the Department are highly innovative and keenly sought after. 
-        The Department has trained more than a thousand engineers who have distinguished themselves as leading academicians, industry professionals, 
-        and entrepreneurs in several universities and industries in India and abroad.
-      </p>
+      <h1>Mission</h1><br/>
+      <ul style="color:black; list-style-type: circle">
+        <li>To empower budding minds from rural sector with technology and skills.</li>
+        <li>To promote and encourage students towards innovative ideas and aid in development of unique skills.</li>
+        <li>Promote best practices in teaching-learning, with dedicated staff and supportive infrastructure to create
+technically competent engineers.</li>
+        <li>Inculcate ethical and cultural values, communication and Entrepreneurial skills.</li>
+        <li>Provide exposure of tools and technologies necessary to bridge the gap between academia and industry .</li>
+        <li>Encourage the youths to pursue career in Computer domain with modern innovations.</li>
+      </ul>
+      
     </div>
     <div class="col-md-4">
       <div style="text-align:center;">
@@ -478,7 +502,233 @@
   </div>
   
   <!--end of staff photos-->
-  
+  <!-- activities --->
+  <div id="activity">
+    <div class="row">
+      <div class="col-md-11">
+        <h1>TECHNICAL TALKS ORGANIZED BY DEPARTEMENT</h1><br/>
+        <table style="margin-left:10px;color: black" class="table-bordered" style="text-align: center">
+          <tr>
+            <th style="text-align: center;width: 100px">
+              Sl No
+            </th>
+            <th style="text-align: center;">
+              Resource Person with Training Company Name
+            </th>
+            <th style="text-align: center;">
+              Title
+            </th>
+            <th style="text-align: center;">
+              Participants(semester) With Number
+            </th>
+            <th style="text-align: center;width: 100px">
+              Date
+            </th>
+        </tr>
+        <tr>
+          <td style="text-align: center;width: 100px">
+            1
+          </td>
+          <td style="text-align: center">
+            Dr. D. S. Guru, Professor and Nodal Officer, CBCS Education, University of Mysuru.
+          </td>
+          <td style="text-align: center">
+            comparison of ancient human life to current life style
+          </td>
+          <td style="text-align: center">
+            3rd SEM
+          </td>
+          <td style="text-align:center">
+            5-5-2016
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align:center">
+            2
+          </td>
+          <td style="text-align:center">
+            Dr Uma Professor and Head, Department of ISE,  MCE Hassan.
+          </td>
+          <td style="text-align:center">
+            Data Structures and Its Applications with practical examples through live and creative activities.
+          </td>
+          <td style="text-align:center">
+            4rd SEM
+          </td>
+          <td style="text-align:center">
+            5-5-2016
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align:center">
+            3
+          </td>
+          <td style="text-align:center">
+            Dr. Shivakumara Palaiahnakote, Department Of Computer System & Technology, Faculty Of Computer Science & Information Technology, University of Malaya, Malaysia.
+          </td>
+          <td style="text-align:center">
+            Highlighted the usage of existing technology in real-time application and importance of computer science and information technology. 
+          </td>
+          <td style="text-align:center">
+            4rd SEM
+          </td>
+          <td style="text-align:center"> 
+            5-5-2016
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align:center">
+            4
+          </td>
+          <td style="text-align:center">
+            Mr. SUMANTH PRABHU, co-founder and director KIDVENTO Mysuru.
+          </td>
+          <td style="text-align:center">
+            Ignite the Entrepreneurial spirit in you!
+          </td>
+          <td style="text-align:center">
+            4th SEM
+          </td>
+          <td style="text-align:center"> 
+            5-5-2016
+          </td>
+        </tr>  <br/>
+        <tr>
+          <td style="text-align:center">
+            5
+          </td>
+          <td style="text-align:center">
+            Mr. Varuna, CEO, Eudaemonic Systems, Mysore.
+          </td>
+          <td style="text-align:center">
+            Software Engineering and Industry Prospective
+          </td>
+          <td style="text-align:center">
+            4th SEM
+          </td>
+          <td style="text-align:center"> 
+            5-5-2016
+          </td>
+        </tr>         
+        </table><br/><br/>
+
+      </div>
+    </div>
+
+  <div class="row">
+      <div class="col-md-11">
+        <h1 style="color: black;margin-left:30px">Workshops Conducted</h1><br/>
+        <table style="margin-left:10px;color: black" class="table-bordered" style="text-align: center">
+          <tr>
+            <th style="text-align: center;width: 100px">
+              Sl No
+            </th>
+            <th style="text-align: center;">
+              Resource Person with Training Company Name
+            </th>
+            <th style="text-align: center;">
+              Title
+            </th>
+            <th style="text-align: center;">
+              Participants(semester) With Number
+            </th>
+            <th style="text-align: center;width: 100px">
+              Date
+            </th>
+        </tr>
+        <tr>
+          <td style="text-align: center;width: 100px">
+            1
+          </td>
+          <td style="text-align: center">
+            Dr. D. S. Guru, Professor and Nodal Officer, CBCS Education, University of Mysuru.
+          </td>
+          <td style="text-align: center">
+            comparison of ancient human life to current life style
+          </td>
+          <td style="text-align: center">
+            3rd SEM
+          </td>
+          <td style="text-align:center">
+            5-5-2016
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align:center">
+            2
+          </td>
+          <td style="text-align:center">
+            Dr Uma Professor and Head, Department of ISE,  MCE Hassan.
+          </td>
+          <td style="text-align:center">
+            Data Structures and Its Applications with practical examples through live and creative activities.
+          </td>
+          <td style="text-align:center">
+            4rd SEM
+          </td>
+          <td style="text-align:center">
+            5-5-2016
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align:center">
+            3
+          </td>
+          <td style="text-align:center">
+            Dr. Shivakumara Palaiahnakote, Department Of Computer System & Technology, Faculty Of Computer Science & Information Technology, University of Malaya, Malaysia.
+          </td>
+          <td style="text-align:center">
+            Highlighted the usage of existing technology in real-time application and importance of computer science and information technology. 
+          </td>
+          <td style="text-align:center">
+            4rd SEM
+          </td>
+          <td style="text-align:center"> 
+            5-5-2016
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align:center">
+            4
+          </td>
+          <td style="text-align:center">
+            Mr. SUMANTH PRABHU, co-founder and director KIDVENTO Mysuru.
+          </td>
+          <td style="text-align:center">
+            Ignite the Entrepreneurial spirit in you!
+          </td>
+          <td style="text-align:center">
+            4th SEM
+          </td>
+          <td style="text-align:center"> 
+            5-5-2016
+          </td>
+        </tr>  <br/>
+        <tr>
+          <td style="text-align:center">
+            5
+          </td>
+          <td style="text-align:center">
+            Mr. Varuna, CEO, Eudaemonic Systems, Mysore.
+          </td>
+          <td style="text-align:center">
+            Software Engineering and Industry Prospective
+          </td>
+          <td style="text-align:center">
+            4th SEM
+          </td>
+          <td style="text-align:center"> 
+            5-5-2016
+          </td>
+        </tr>         
+        </table><br/><br/>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!--end of activities -->
   <!--infrastructure-->
   <div class="infra">
     <div class="row">
