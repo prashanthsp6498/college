@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <!--<link href="css/style1.css" rel='stylesheet' type='text/css' media="all">-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/deptUi.js"></script>
 <link href="css/blast.min.css" rel="stylesheet" />
 <link rel="stylesheet" type="text/css" href="css/style10.css" />
 <style>
@@ -161,53 +162,6 @@
 	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
   <!-- //Web-Fonts -->
   
-  <script>
-    $(document).ready(function(){
-      $('#staff').hide();
-      $('.infra').hide();
-      $('.gallery').hide();
-      $('.contact').hide();
-      $('#staf').on('click',function(){
-        $('.cont').hide();
-        $('#staff').show();
-        $('.infra').hide();
-        $('.contact').hide();
-        $('.gallery').hide();
-
-      });
-
-      $('#contact').on('click',function(){
-        $('.cont').hide();
-        $('#staff').hide();
-        $('.gallery').hide();
-        $('.infra').hide();
-        $('.contact').show();
-
-      });
-
-      $('#home').on('click',function(){
-        $('.cont').show();
-        $('#staff').hide();
-        $('.gallery').hide();
-        $('.contact').hide();
-        $('.infra').hide();
-      });
-
-      $('#infrastruct').on('click',function(){
-        $('.infra').show();
-        $('#staff').hide();
-        $('.cont').hide();
-      });
-
-      $('#gallery').on('click',function(){
-        $('.gallery').show();
-        $('#staff').hide();
-        $('.cont').hide();
-        $('.contact').hide();
-      });
-    });
-  </script>
-
 </head>
 
 <body>
