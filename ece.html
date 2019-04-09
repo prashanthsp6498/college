@@ -167,12 +167,14 @@
       $('.infra').hide();
       $('.gallery').hide();
       $('.contact').hide();
+      $('#activity').hide();
       $('#staf').on('click',function(){
         $('.cont').hide();
         $('#staff').show();
         $('.infra').hide();
         $('.contact').hide();
         $('.gallery').hide();
+        $('#activity').hide();
 
       });
 
@@ -182,6 +184,7 @@
         $('.gallery').hide();
         $('.infra').hide();
         $('.contact').show();
+        $('#activity').hide();
 
       });
 
@@ -191,12 +194,14 @@
         $('.gallery').hide();
         $('.contact').hide();
         $('.infra').hide();
+        $('#activity').hide();
       });
 
       $('#infrastruct').on('click',function(){
         $('.infra').show();
         $('#staff').hide();
         $('.cont').hide();
+        $('#activity').hide();
       });
 
       $('#gallery').on('click',function(){
@@ -204,6 +209,15 @@
         $('#staff').hide();
         $('.cont').hide();
         $('.contact').hide();
+        $('#activity').hide();
+      });
+
+      $('#activies').on('click',function(){
+        $('.gallery').hide();
+        $('#staff').hide();
+        $('.cont').hide();
+        $('.contact').hide();
+        $('#activity').show();
       });
     });
   </script>
@@ -385,12 +399,12 @@
   
   <div id="horizontalTab navbar navbar-expand-lg navbar-light bg-light sticky-nav">
     <ul class="resp-tabs-list justify-content-center nav nav-pills" >
-      <li><button class="btn" id="home"><h3>Home</h3></button></li>
-      <li><button class="btn" id="infrastruct"><h3>Infrastructure</h3></button></li>
-      <li><button class="btn" id="staf"><h3>Staff</h3></button></li>
-      <li><button class="btn" id="activies"><h3>Activities</h3></button></li>
-      <li><button class="btn" id="gallery"><h3>Gallery</h3></button></li>
-      <li><button class="btn" id="contact"><h3>Contact</h3></button></li>
+      <li><button class="btn demo" id="home"><h3>Home</h3></button></li>
+      <li><button class="btn demo" id="infrastruct"><h3>Infrastructure</h3></button></li>
+      <li><button class="btn demo" id="staf"><h3>Staff</h3></button></li>
+      <li><button class="btn demo" id="activies"><h3>Activities</h3></button></li>
+      <li><button class="btn demo" id="gallery"><h3>Gallery</h3></button></li>
+      <li><button class="btn demo" id="contact"><h3>Contact</h3></button></li>
     </ul>
   </div>
   <br/>
@@ -487,6 +501,135 @@
   
   <!--end of staff photos-->
   
+<!-- activities --->
+  <div id="activity">
+    <div class="row">
+      <div class="col-md-11">
+        <h1>TECHNICAL TALKS ORGANIZED BY DEPARTEMENT</h1><br/>
+        <table style="margin-left:10px;color: black" class="table-bordered" style="text-align: center">
+          <tr>
+            <th style="text-align: center;width: 100px">
+              Sl No
+            </th>
+            <th style="text-align: center;">
+              Resource Person with Training Company Name
+            </th>
+            <th style="text-align: center;">
+              Title
+            </th>
+            <th style="text-align: center;">
+              Participants(semester) With Number
+            </th>
+            <th style="text-align: center;width: 100px">
+              Date
+            </th>
+        </tr>
+        <tr>
+          <td style="text-align: center;width: 100px">
+            1
+          </td>
+          <td style="text-align: center">
+            Dr. Pandian P.S, Scientist &#39;F&#39;, LDRE, DRDO.
+          </td>
+          <td style="text-align: center">
+            &quot;Recent Advancement in Medical Devices and Development&quot; by Dr. P.S. Pandian, Scientist ‘F’, LRDE, DRDO
+          </td>
+          <td style="text-align: center">
+            3rd SEM
+          </td>
+          <td style="text-align:center">
+            5-5-2016
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align:center">
+            2
+          </td>
+          <td style="text-align:center">
+            Mr Raghubhim Rao, Senior Program Manager working in Valtech India Systems
+          </td>
+          <td style="text-align:center">
+            What industry expects and How to prepare for that &quot;
+          </td>
+          <td style="text-align:center">
+            4rd SEM
+          </td>
+          <td style="text-align:center">
+            5-5-2016
+          </td>
+        </tr>
+             
+        </table><br/><br/>
+
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-11">
+        <h1 style="color: black;margin-left:30px">Workshops Conducted</h1><br/>
+        <table style="margin-left:10px;color: black" class="table-bordered" style="text-align: center">
+          <tr>
+            <th style="text-align: center;width: 100px">
+              Sl No
+            </th>
+            <th style="text-align: center;">
+              Resource Person with Training Company Name
+            </th>
+            <th style="text-align: center;">
+              Title
+            </th>
+            <th style="text-align: center;">
+              Participants(semester) With Number
+            </th>
+            <th style="text-align: center;width: 100px">
+              Date
+            </th>
+        </tr>
+        
+        <tr>
+          <td style="text-align:center">
+            1
+          </td>
+          <td style="text-align:center">
+            --
+          </td>
+          <td style="text-align:center">
+            EMBEDDED SYSTEM DESIGN USING MSP430 AND ITS IOT BASED APPLICATIONS IN ASSOCIATION WITH TELOS TECHNOLOGIES
+          </td>
+          <td style="text-align:center">
+            4rd SEM
+          </td>
+          <td style="text-align:center">
+            5-5-2016
+          </td>
+        </tr>
+        
+        <tr>
+          <td style="text-align:center">
+            2
+          </td>
+          <td style="text-align:center">
+           --
+          </td>
+          <td style="text-align:center">
+            EMBEDDED SYSTEM DESIGN USING ARDUINO
+          </td>
+          <td style="text-align:center">
+            4th SEM
+          </td>
+          <td style="text-align:center"> 
+            5-5-2016
+          </td>
+        </tr>         
+        </table><br/><br/>
+
+      </div>
+    </div>
+
+</div>
+
+
   <!--infrastructure-->
   <div class="infra">
     <div class="row">
