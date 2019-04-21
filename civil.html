@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <!--<link href="css/style1.css" rel='stylesheet' type='text/css' media="all">-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/deptUi.js"></script>
 <link href="css/blast.min.css" rel="stylesheet" />
 <link rel="stylesheet" type="text/css" href="css/style10.css" />
 <style>
@@ -161,93 +162,53 @@
 	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
   <!-- //Web-Fonts -->
   
-  <script>
-    $(document).ready(function(){
-      $('#staff').hide();
-      $('.infra').hide();
-      $('.gallery').hide();
-      $('.contact').hide();
-      $('#staf').on('click',function(){
-        $('.cont').hide();
-        $('#staff').show();
-        $('.infra').hide();
-        $('.contact').hide();
-        $('.gallery').hide();
-
-      });
-
-      $('#contact').on('click',function(){
-        $('.cont').hide();
-        $('#staff').hide();
-        $('.gallery').hide();
-        $('.infra').hide();
-        $('.contact').show();
-
-      });
-
-      $('#home').on('click',function(){
-        $('.cont').show();
-        $('#staff').hide();
-        $('.gallery').hide();
-        $('.contact').hide();
-        $('.infra').hide();
-      });
-
-      $('#infrastruct').on('click',function(){
-        $('.infra').show();
-        $('#staff').hide();
-        $('.cont').hide();
-      });
-
-      $('#gallery').on('click',function(){
-        $('.gallery').show();
-        $('#staff').hide();
-        $('.cont').hide();
-        $('.contact').hide();
-      });
-    });
-  </script>
-
 </head>
 
 <body>
 	<!-- header -->
-	<header>
-		<!-- top header -->
-		<div class="top-head-w3ls py-2 bg-dark">
-			<div class="container">
-				<div class="row">
-					<h1 class="text-capitalize text-white col-7">
-						<i class="fas fa-book text-dark bg-white p-2 rounded-circle mr-3"></i>welcome to MIT,Thandavpura</h1>
-	
-						
-					<!-- social icons -->
-					<div class="social-icons text-right col-5">
-						<ul class="list-unstyled">
-							<li>
-								<a href="#" class="fab fa-facebook-f icon-borde facebook rounded-circle"> </a>
-							</li>
-							<li class="mx-2">
-								<a href="#" class="fab fa-twitter icon-border twitter rounded-circle"> </a>
-							</li>
-							<li>
-								<a href="#" class="fab fa-google-plus-g icon-border googleplus rounded-circle"> </a>
-							</li>
-							<li class="ml-2">
-								<a href="#" class="fas fa-rss icon-border rss rounded-circle"> </a>
-							</li>
-						</ul>
-					</div>
-					<!-- //social icons -->
-				</div>
-			</div>
-		</div>
-		<!-- //top header -->
-		<!-- middle header -->
-		
-		<!-- //middle header -->
-	</header>
-	<!-- //header -->
+	<header style="background-color: #6f6f6f">
+    <!-- top header -->
+    <div  style="margin-top:5px;" class="top-head-w3ls py-2 navbar-expand-lg">
+      <div class="container">
+        <div class="row">
+          <img  class="img-rounded" src="images/mitt_logo.jpg" width="100px" height="50px"/>
+          <h1 class="text-capitalize  col-4" style="color: white" >
+            <i class="fas fa-book text-dark bg-white p-2 rounded-circle mr-3"></i>welcome to MIT,Thandavpura</h1>
+  
+          <a style="color:black;margin-left:2px;" href="mailto:Webmail@mitt.edu.in">
+          <img src="images/header/mail.png" id="mail" style="col-4" width="40px" height="30px" />
+            <span style="font-size: 15px;color: white">webmail.edu.in</span></a>      
+
+          <a style="color:black;margin-left:90px;" href="http://45.112.139.194:8088">
+          <img src="images/header/portal.png" id="mail" style="col-4" width="40px" height="30px" />
+           <span style="font-size: 15px;color: white">Student Portal</span></a>
+          <!-- social icons -->
+          <div  class="social-icons text-right col-3" style="margin-right:2px">
+            <ul class="list-unstyled">
+              <li>
+                <a style="background: orange;margin-top:-15px" href="#" class="fab fa-facebook icon-borde facebook rounded-circle"> </a>
+              </li>
+              <li class="mx-2">
+                <a style="background: orange;margin-top:-15px" href="#" class="fab fa-twitter icon-border twitter rounded-circle"> </a>
+              </li>
+              <li>
+                <a style="background: orange;margin-top:-15px" href="#" class="fab fa-youtube icon-border youtube rounded-circle"> </a>
+              </li>
+              
+              <img style="margin-right:5px;margin-left: 15px" class="img-rounded" src="images/met_logo.jpg" width="100px" height="50px"/>
+            </ul>
+
+          </div>
+          <!-- //social icons -->
+        </div>
+      </div>
+    </div>
+    <!-- //top header -->
+    <!-- middle header -->
+    
+    <!-- //middle header -->
+  </header>
+  <!-- //header -->
 
   <div class="navigation-w3ls" >
       <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-nav">
@@ -385,12 +346,12 @@
   
   <div id="horizontalTab navbar navbar-expand-lg navbar-light bg-light sticky-nav">
     <ul class="resp-tabs-list justify-content-center nav nav-pills" >
-      <li><button class="btn" id="home"><h3>Home</h3></button></li>
-      <li><button class="btn" id="infrastruct"><h3>Infrastructure</h3></button></li>
-      <li><button class="btn" id="staf"><h3>Staff</h3></button></li>
-      <li><button class="btn" id="activies"><h3>Activities</h3></button></li>
-      <li><button class="btn" id="gallery"><h3>Gallery</h3></button></li>
-      <li><button class="btn" id="contact"><h3>Contact</h3></button></li>
+      <li><button class="btn demo" id="home"><h3>Home</h3></button></li>
+      <li><button class="btn demo" id="infrastruct"><h3>Infrastructure</h3></button></li>
+      <li><button class="btn demo" id="staf"><h3>Staff</h3></button></li>
+      <li><button class="btn demo" id="activies"><h3>Activities</h3></button></li>
+      <li><button class="btn demo" id="gallery"><h3>Gallery</h3></button></li>
+      <li><button class="btn demo" id="contact"><h3>Contact</h3></button></li>
     </ul>
   </div>
   <br/>
@@ -400,21 +361,18 @@
     <div class="col-md-7" style="margin-left:30px">
       <h1 style="margin-left: 20px;color:black">ABOUT OUR DEPARTMENT</h1>
       <br/><br/>
+      <h1 style="color:black">Vission</h1><br/>
       <p style="color:black">
-        Nothing is exciting in these times as the field of Computer Science. 
-        Being close to India’s Silicon Valley, young bright students are eager to pursue their graduation courses in this field. 
-        Ever since its inception in 1997, the Department has been a pioneering academic center for under graduation and post-graduation in the areas of Computer Science Engineering. 
-        It has assiduously pursued its mission of carrying out leading edge facilities in both foundational and Industry oriented problems.
-      </p><br/>
-      <p style="color:black;">
-        The department is well equipped with good infrastructure such as latest computers, Laboratory Equipment's, 150 Mbps leased line connection & Wi-Fi Internet connectivity and well qualified faculty members.
-      </p><br/>
-      <p style="color:black;">
-        The academic programs of the Department are highly innovative and keenly sought after. 
-        The Department has trained more than a thousand engineers who have distinguished themselves as leading academicians, industry professionals, 
-        and entrepreneurs in several universities and industries in India and abroad.
-      </p>
-    </div>
+        To produce responsible, technically qualified professionals with ethical and human values to develop and build our nation by providing value based learning, research and consultancy.</p><br/><br/>
+      <h1 style="color:black">MISSION</h1><br/>
+      <ul style="list-style-type: circle; color: black">
+        <li>To impart quality and real time education through competent faculties, modern labs and engaging to provide state of art consultancy services addressing civil engineering challenges of global scenario.</li>
+        <li>To inculcate entrepreneurship and leadership qualities</li>
+        <li>To make the department centre of excellence in the field of Civil engineering and allied research</li>
+        <li>To promote innovative and empirical thinking in the minds of budding engineers through industry institute interaction</li>
+        <li>To encourage students for knowledge expansion by pursuing higher education and take competitive exam </li>
+      </ul>
+      </div>
     <div class="col-md-4">
       <div style="text-align:center;">
         <img style="margin-top:10px" src="images/hod/civil.JPG"  class="img-thumbnail" alt="Cinque Terre"> 
@@ -433,25 +391,25 @@
        
         <div class="col-md-3 ">
           <div style="text-align:center">
-            <img style="margin-top:10px" src="images/t4.jpg"  class="img-thumbnail" alt="Cinque Terre"> 
-             <p style="margin-top:2px;color: black"><strong>Prof. Name</strong> </p>
+            <a href="https://drive.google.com/open?id=1UjwDq_N_py12AHNIxAAYzXjhI9CF89V4"><img style="margin-top:10px" src="images/t4.jpg"  class="img-thumbnail" alt="Cinque Terre"></a> 
+             <p style="margin-top:2px;color: black"><strong>Prof. Dr. B C Nagendra Prasad</strong> </p>
              <p style="color: black">BE,M.Tech,(Ph.d)</p>
              <p style="color: black"><strong>Professor and Head</strong></p>
           </div>
         </div>
         <div class="col-md-3 ">
           <div style="text-align:center">  
-            <img style="margin-top:10px" src="images/t2.jpg"  class="img-thumbnail" alt="Cinque Terre"> 
-            <p style="margin-top:2px;color: black"><strong>Prof. Name</strong> </p>
-            <p >Associate Professor</p>
+            <a href="https://drive.google.com/open?id=1osqEDBfpWnobzJt-XCC8nQpmCZqdFpCB"><img style="margin-top:10px" src="images/t2.jpg"  class="img-thumbnail" alt="Cinque Terre"></a> 
+            <p style="margin-top:2px;color: black"><strong>Prof. Dr. M.C. MANJUNATHA</strong> </p>
+            <p >Assistant Professor</p>
             <p style="color: black">BE,M.Tech,(Ph.d)</p>
           </div>
         </div>
         <div class="col-md-3 ">
           <div style="text-align:center">
-            <img style="margin-top:10px" src="images/t5.jpg"  class="img-thumbnail" alt="Cinque Terre">
-            <p style="margin-top:2px;color: black"><strong>Prof. Name</strong> </p>
-            <p>Associate Professor</p>
+            <a href="https://drive.google.com/open?id=16rUxVtzFuATpOEkrph-hUE2nGRJVplIr"><img style="margin-top:10px" src="images/t5.jpg"  class="img-thumbnail" alt="Cinque Terre"></a>
+            <p style="margin-top:2px;color: black"><strong>Prof. Raghavendra A</strong> </p>
+            <p>Assistant Professor</p>
             <p style="color: black">BE,M.Tech,(Ph.d)</p> 
           </div>
         </div>

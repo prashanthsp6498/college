@@ -198,3 +198,7 @@ html {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+
+.demo{
+        margin-left: -40px;
+      }

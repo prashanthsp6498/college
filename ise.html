@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <!--<link href="css/style1.css" rel='stylesheet' type='text/css' media="all">-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/deptUi.js"></script>
 <link href="css/blast.min.css" rel="stylesheet" />
 <link rel="stylesheet" type="text/css" href="css/style10.css" />
 <style>
@@ -161,108 +162,56 @@
 	 rel="stylesheet">
 	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
   <!-- //Web-Fonts -->
-  
-  <script>
-    $(document).ready(function(){
-      $('#staff').hide();
-      $('.infra').hide();
-      $('.gallery').hide();
-      $('.contact').hide();
-      $('#activity').hide();
-      $('#staf').on('click',function(){
-        $('.cont').hide();
-        $('#staff').show();
-        $('.infra').hide();
-        $('.contact').hide();
-        $('.gallery').hide();
-        $('#activity').hide();
 
-      });
-
-      $('#contact').on('click',function(){
-        $('.cont').hide();
-        $('#staff').hide();
-        $('.gallery').hide();
-        $('.infra').hide();
-        $('.contact').show();
-        $('#activity').hide();
-
-      });
-
-      $('#home').on('click',function(){
-        $('.cont').show();
-        $('#staff').hide();
-        $('.gallery').hide();
-        $('.contact').hide();
-        $('.infra').hide();
-        $('#activity').hide();
-      });
-
-      $('#infrastruct').on('click',function(){
-        $('.infra').show();
-        $('#staff').hide();
-        $('.cont').hide();
-        $('#activity').hide();
-      });
-
-      $('#gallery').on('click',function(){
-        $('.gallery').show();
-        $('#staff').hide();
-        $('.cont').hide();
-        $('.contact').hide();
-        $('#activity').hide();
-      });
-
-      $('#activies').on('click',function(){
-        $('#activity').show();
-        $('#staff').hide();
-        $('.cont').hide();
-        $('.contact').hide();
-      });
-    });
-  </script>
 
 </head>
 
 <body>
-	<!-- header -->
-	<header>
-		<!-- top header -->
-		<div class="top-head-w3ls py-2 bg-dark">
-			<div class="container">
-				<div class="row">
-					<h1 class="text-capitalize text-white col-7">
-						<i class="fas fa-book text-dark bg-white p-2 rounded-circle mr-3"></i>welcome to MIT,Thandavpura</h1>
-	
-						
-					<!-- social icons -->
-					<div class="social-icons text-right col-5">
-						<ul class="list-unstyled">
-							<li>
-								<a href="#" class="fab fa-facebook-f icon-borde facebook rounded-circle"> </a>
-							</li>
-							<li class="mx-2">
-								<a href="#" class="fab fa-twitter icon-border twitter rounded-circle"> </a>
-							</li>
-							<li>
-								<a href="#" class="fab fa-google-plus-g icon-border googleplus rounded-circle"> </a>
-							</li>
-							<li class="ml-2">
-								<a href="#" class="fas fa-rss icon-border rss rounded-circle"> </a>
-							</li>
-						</ul>
-					</div>
-					<!-- //social icons -->
-				</div>
-			</div>
-		</div>
-		<!-- //top header -->
-		<!-- middle header -->
-		
-		<!-- //middle header -->
-	</header>
-	<!-- //header -->
+<!-- header -->
+  <header style="background-color: #6f6f6f">
+    <!-- top header -->
+    <div  style="margin-top:5px;" class="top-head-w3ls py-2 navbar-expand-lg">
+      <div class="container">
+        <div class="row">
+          <img  class="img-rounded" src="images/mitt_logo.jpg" width="100px" height="50px"/>
+          <h1 class="text-capitalize  col-4" style="color: white" >
+            <i class="fas fa-book text-dark bg-white p-2 rounded-circle mr-3"></i>welcome to MIT,Thandavpura</h1>
+  
+          <a style="color:black;margin-left:2px;" href="mailto:Webmail@mitt.edu.in">
+          <img src="images/header/mail.png" id="mail" style="col-4" width="40px" height="30px" />
+            <span style="font-size: 15px;color: white">webmail.edu.in</span></a>      
 
+          <a style="color:black;margin-left:80px;" href="http://45.112.139.194:8088">
+          <img src="images/header/portal.png" id="mail" style="col-4" width="40px" height="30px" />
+           <span style="font-size: 15px;color: white">Student Portal</span></a>
+          <!-- social icons -->
+          <div  class="social-icons text-right col-3" style="margin-right:2px">
+            <ul class="list-unstyled">
+              <li>
+                <a style="background: orange;margin-top:-15px" href="#" class="fab fa-facebook icon-borde facebook rounded-circle"> </a>
+              </li>
+              <li class="mx-2">
+                <a style="background: orange;margin-top:-15px" href="#" class="fab fa-twitter icon-border twitter rounded-circle"> </a>
+              </li>
+              <li>
+                <a style="background: orange;margin-top:-15px" href="#" class="fab fa-youtube icon-border youtube rounded-circle"> </a>
+              </li>
+              
+              <img style="margin-right:5px;margin-left: 15px" class="img-rounded" src="images/met_logo.jpg" width="100px" height="50px"/>
+            </ul>
+
+          </div>
+          <!-- //social icons -->
+        </div>
+      </div>
+    </div>
+    <!-- //top header -->
+    <!-- middle header -->
+    
+    <!-- //middle header -->
+  </header>
+  <!-- //header -->
+  
   <div class="navigation-w3ls" >
       <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-nav">
         <button class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -366,9 +315,9 @@
     <!-- //navigation -->
 
   <div class="w3-content w3-section" style="max-width:500px">
-    <img class="mySlides" src="images/ab.jpg" style="width:100%;height: 500px;">
-    <img class="mySlides" src="images/cse.jpeg" style="width:100%;height: 500px;">
-    <img class="mySlides" src="images/ise.jpeg" style="width:100%;height: 500px;">
+    <img class="mySlides" src="images/ise/slider1.png" style="width:100%;height: auto;">
+    <img class="mySlides" src="images/ise/slider2.png" style="width:100%;height: auto;">
+    
   </div>
   
   <script>
@@ -399,12 +348,12 @@
   
   <div id="horizontalTab navbar navbar-expand-lg navbar-light bg-light sticky-nav">
     <ul class="resp-tabs-list justify-content-center nav nav-pills" >
-      <li><button class="btn" id="home"><h3>Home</h3></button></li>
-      <li><button class="btn" id="infrastruct"><h3>Infrastructure</h3></button></li>
-      <li><button class="btn" id="staf"><h3>Staff</h3></button></li>
-      <li><button class="btn" id="activies"><h3>Activities</h3></button></li>
-      <li><button class="btn" id="gallery"><h3>Gallery</h3></button></li>
-      <li><button class="btn" id="contact"><h3>Contact</h3></button></li>
+      <li><button class="btn demo" id="home"><h3>Home</h3></button></li>
+      <li><button class="btn demo" id="infrastruct"><h3>Infrastructure</h3></button></li>
+      <li><button class="btn demo" id="staf"><h3>Staff</h3></button></li>
+      <li><button class="btn demo" id="activies"><h3>Activities</h3></button></li>
+      <li><button class="btn demo" id="gallery"><h3>Gallery</h3></button></li>
+      <li><button class="btn demo" id="contact"><h3>Contact</h3></button></li>
     </ul>
   </div>
   <br/>
@@ -414,6 +363,21 @@
     <div class="col-md-7" style="margin-left:30px">
       <h1 style="margin-left: 20px;color:black">ABOUT OUR DEPARTMENT</h1>
       <br/><br/>
+
+      <h2 style="color: black">Strength of the Department</h2><br/>
+      <div class="row">
+      <div class="col-md-3">
+        <img src="images/chetan.jpg" width="100px"alt="Chetan">
+        <h4 style="color: black">Dr H.K Chetan</h4>
+        <p style="color: black">Mentor</p>
+      </div>
+      <div class="col-md-2">
+        <img src="images/guru.jpg" width="90px" alt="Guru">
+        <h4 style="color: black">Dr D S Guru</h4>
+        <p style="color: black">Mentor</p>
+      </div>
+    </div>
+    </div>
       <p style="color:black">
         The role of IT has evolved from supporting businesses to transforming them. In order to sustain in this transformation, one has to identify the market needs, introduce excellent academic processes and bench mark the outcomes as per the defined standards. The Information Science and Engineering Department focuses on all-round development, encourages a vibrant interest in academic as well as in extracurricular activities. The department has fully equipped laboratories, well qualified and experienced staff. The Department regularly arranges seminars, workshops from Industry, Academic experts for students as well as staff and also organizes industry visits for students. The Department offers add-on courses to cope up with the latest trends in technology. The track record of result is excellent. 
       </p><br/>
@@ -444,42 +408,53 @@
   
     
     <!--staff photos-->
-    
-      <div class="row " id="staff">
+    <div id="staff">
+      <div class="row">
        
         <div class="col-md-3 ">
           <div style="text-align:center">
-            <img style="margin-top:10px" src="images/t4.jpg"  class="img-thumbnail" alt="Cinque Terre"> 
-             <p style="margin-top:2px;color: black"><strong>Prof. Name</strong> </p>
+            <a href="https://drive.google.com/open?id=1EpCz1dxSXRzSLnTXYCQMCty4q8SF1Qcx" ><img style="margin-top:10px;transform:rotate(270deg);height: 100px;width:120px" src="images/ise/mp.JPG"  class="img-thumbnail" alt="MAHADEVA PRASAD Y N"></a>
+            <p style="margin-top:2px;color: black"><br/><strong>Prof. MAHADEVA PRASAD Y N</strong> </p><br/>
+             <p >Associate Professor</p>
              <p style="color: black">BE,M.Tech,(Ph.d)</p>
-             <p style="color: black"><strong>Professor and Head</strong></p>
           </div>
         </div>
         <div class="col-md-3 ">
           <div style="text-align:center">  
-            <img style="margin-top:10px" src="images/t2.jpg"  class="img-thumbnail" alt="Cinque Terre"> 
-            <p style="margin-top:2px;color: black"><strong>Prof. Name</strong> </p>
+            <a href="https://drive.google.com/open?id=1OKTaMOvpMD0thw5xdG-x2FwxQ5HdYqfJ" ><img style="margin-top:10px;transform:rotate(270deg);height: 100px;width:120px" src="images/ise/madhan.JPG"  class="img-thumbnail" alt="MADHAN KUMAR G S"></a><br/>
+            <p style="margin-top:2px;color: black"><br/><strong>Prof. MADHAN KUMAR G S</strong> </p>
             <p >Associate Professor</p>
             <p style="color: black">BE,M.Tech,(Ph.d)</p>
           </div>
         </div>
         <div class="col-md-3 ">
           <div style="text-align:center">
-            <img style="margin-top:10px" src="images/t5.jpg"  class="img-thumbnail" alt="Cinque Terre">
-            <p style="margin-top:2px;color: black"><strong>Prof. Name</strong> </p>
+            <a href="https://drive.google.com/open?id=13Vn1rSTt_FmNiscyvrV3039-qNi_hcCN" ><img style="margin-top:10px;height: 100px;width:120px" src="images/ise/naveen.JPG"  class="img-thumbnail" alt="Prof. Navile Nageshwara Naveen"></a><br/>
+            <p style="margin-top:2px;color: black"><br/><strong>Prof. Navile Nageshwara Naveen</strong> </p>
             <p>Associate Professor</p>
             <p style="color: black">BE,M.Tech,(Ph.d)</p> 
           </div>
         </div>
         <div class="col-md-3 ">
           <div style="text-align:center">
-            <img style="margin-top:10px" src="images/t6.jpg"  class="img-thumbnail" alt="Cinque Terre"> 
-            <p style="margin-top:2px;color: black"><strong>Prof. Name</strong> </p>
+           <a href="https://drive.google.com/open?id=12DtxBeQOIQGtkdtLkGv0QrQWSIuV8wki" ><img style="margin-top:10px;transform:rotate(270deg);height: 100px;width:120px" src="images/ise/kavya.JPG"  class="img-thumbnail" alt="Prof. Kavya P"> </a><br/>
+            <p style="margin-top:2px;color: black"><br/><strong>Prof. Kavya P</strong> </p>
+            <p >Associate Professor</p>
+            <p style="color: black">BE,M.Tech,(Ph.d)</p>
+          </div>
+        </div>
+    </div><br/>
+    <div class="row">
+      <div class="col-md-3 ">
+          <div style="text-align:center">
+           <a href="https://drive.google.com/open?id=145g9LjtZ5HK7K19TR5GJpHOmSHPBCNkr" ><img style="margin-top:10px;transform:rotate(270deg);height: 100px;width:120px" src="images/ise/kavya.JPG"  class="img-thumbnail" alt="Prof. MOHAMMED SALAMATH"> </a><br/>
+            <p style="margin-top:2px;color: black"><br/><strong>Prof. MOHAMMED SALAMATH</strong> </p>
             <p >Associate Professor</p>
             <p style="color: black">BE,M.Tech,(Ph.d)</p>
           </div>
         </div>
     </div>
+
   </div>
   
   <!--end of staff photos-->
@@ -513,16 +488,16 @@
           <p style="color:black"> 
             Department of Computer Science and Engineering and Information Science and Engineering MITT, Mysuru had organized a technical talk on “Ignite the Entrepreneurial spirit in you!” on 19th March 2018. The program began with self introduction by Resource Person Mr. SUMANTH PRABHU, co-founder and director KIDVENTO Mysuru.
             <br/>
-            <img style="margin-left:40px" src="images/shimoga.png" class="img-rounded" alt="workshop"></p>
+            <img style="margin-left:40px;width: 100%;height: 500px" src="images/shimoga.png" class="img-rounded" alt="workshop"></p>
           
         </div>
-        <div style="color:black;margin-left: 30px" class="col-md-10 "><br/><br/>
+        <div style="color:black;margin-left: 20px" class="col-md-10 "><br/><br/>
           <h2>Stress Free week conducted from 22nd January, 2018 to 26th January, 2018</h2>
           <p style="color:black"> 
             Department of Computer Science and Engineering and Information Science and Engineering had organized a one  Day Workshop on “Technical hour program skills” in association with , 2016. The program began with inaugural function with   Resource Person Mr. Ashok Nagaraju , Teacher & Trainer and Developer , Academy, Bengaluru, and Prof. Lakshmidurga, HOD, Department of Computer Science & Engineering, MIT,Thandavapura  gracing the occasion.<br/>
             The session began with the “Overview of the Corporate Culture” by Mr.Chirantana G A spokesperson  of the day and they  reviewing the examples and Challenges of a New Joined with number of related points with how to tackle the difficulties in corporate field.
             <br/><br/>
-            <img style="margin-left:40px" src="images/shiv.jpg" height="400px" width="600px" class="img-rounded" alt="workshop"></p>
+            <img style="margin-left:40px;margin-right:40px;width:100%;height: auto" src="images/shiv.jpg" class="img-rounded" alt="workshop"></p>
           
         </div>
   </div>
@@ -540,47 +515,47 @@
           <li><h2>Programming in C </h2>
             <p style="color:black">C is the most commonly used programming language for writing operating systems. The first operating system written in C is Unix. Later operating systems like GNU/Linux were all written in C. Not only is C the language of operating systems, it is the precursor and inspiration for almost all of the most popular high-level languages available today. In fact, Perl, PHP, Python and Ruby are all written in C. <br/>
             This laboratory will anable the students to familiarize with wiiting algorithms, fundamentals of C and problem solving, Implement different programming constructs and decomposition of problems into functions, Use and implement the data stuctures like arrays and structures to obtain solutions.</p>
-          </li><br/>
+          </li>
           <li><h2>Analog and Digital Electronics Lab</h2>
             <p style="color:black">
               This laboratory enable students to get practical experience in design, assembly and evaluation/testing of analog components and circuits. the students can able to,Use various Electronic Devices like Cathode ray Oscilloscope, Signal generators, DigitalTrainer Kit, Multimeters and components like Resistors, Capacitors, Op amp and Integrated Circuit.</p>
-          </li><br/>
+          </li>
           <li><h2>Data structures with C/C++ lab</h2>
             <p style="color:black">
               This laboratory course enable students to get practical experience in design, develop, implement,analyze and testing of  Linear data structures and their applications such as stacks, queues and listsand Non-Linear data structures and their applications such as trees and graphs, Later this lab enable the student to Choose the appropriate data structure for solving real world problems.</p>
-          </li><br/>
+          </li>
           <li><h2>Design and Analysis of Algorithm Lab with C++</h2>
             <p style="color:black">
               This laboratory enable the  students to Design and implement various algorithms in JAVA language.and even Employ the various design strategies for problem solving.This laboratory helps the student to Measure and compare the performance of different algorithms.</p>
-          </li><br/>
+          </li>
           <li><h2>Microprocessor Lab</h2>
             <p style="color:black">
               This laboratory enable the students to provide practical exposure to the students on microprocessors, design and coding knowledge on 80x86 family/ARM. The ARM laboratory includes a platform for developing and testing software related to ARM architecture and many basics of ARM programming Principles.</p>
-          </li><br/>
+          </li>
           <li><h2>Database Applications Laboratory</h2>
             <p style="color:black">
               This laboratory will enable students to Foundation knowledge in database concepts, technology and practice to groom students into well-informed database application developers. And also enable the students to perform the Strong practice in SQL programming through a variety of database problems. Students can able to Develop database applications using front-end tools and back-end DBMS</p>
-          </li><br/>
+          </li>
           <li><h2>System Software and Compiler design Laboratory</h2>
             <p style="color:black">
               This course will enable students to Define System Software such as Assemblers, Loaders, Linkers and Macroprocessors, Familiarize with source file, object file and executable file structures and libraries and Describe the front-end and back-end phases of compiler and their importance.</p>
-          </li><br/>
+          </li>
           <li><h2>Software Testing Laboratory</h2>
             <p style="color:black">
               This laboratory will enable students to Differentiate the various testing techniques, Analyze the problem and derive suitable test cases, Apply suitable technique for designing of flow graph and Explain the need for planning and monitoring a process</p>
-          </li><br/>
+          </li>
           <li><h2>Networks Laboratory</h2>
             <p style="color:black">
               This laboratory will enable students to  Demonstrate operation of network and its management commandsstudents can Simulate(Using NS2/NS3) and demonstrate the performance of GSM and CDMA.and also students can Implement data link layer and transport layer protocols.</p>
-          </li><br/>
+          </li>
           <li><h2>COMPUTER GRAPHICS AND VISUALIZATION</h2>
             <p style="color:black">
-              This laboratory will enable students to Explain hardware, software and OpenGL Graphics Primitives, Illustrate interactive computer graphic using the OpenGL, Design and implementation of algorithms for 2D graphics Primitives and attributes, Demonstrate Geometric transformations, viewing on both 2D and 3D objects,  Infer the representation of curves, surfaces, Color and Illumination models.</p>
-          </li><br/>
+              This laboratory will enable students to  Demonstrate operation of network and its management commandsstudents can Simulate(Using NS2/NS3) and demonstrate the performance of GSM and CDMA.and also students can Implement data link layer and transport layer protocols.</p>
+          </li>
           <li><h2>File Structures Laboratory</h2>
             <p style="color:black">
               This laboratory  will enable students to Explain the fundamentals of file structures and their management, Measure the performance of different file structures, Organize different file structures in the memory and Demonstrate hashing and indexing techniques..</p>
-          </li><br/>
+          </li>
 
         </ol>
 

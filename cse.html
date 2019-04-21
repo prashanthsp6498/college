@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <!--<link href="css/style1.css" rel='stylesheet' type='text/css' media="all">-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/deptUi.js"></script>
 <link href="css/blast.min.css" rel="stylesheet" />
 <link rel="stylesheet" type="text/css" href="css/style10.css" />
 <style>
@@ -132,6 +133,7 @@
         text-decoration: none;
         cursor: pointer;
       }
+
       
       /* 100% Image Width on Smaller Screens */
       @media only screen and (max-width: 700px){
@@ -160,95 +162,54 @@
 	 rel="stylesheet">
 	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
   <!-- //Web-Fonts -->
-  
-  <script>
-    $(document).ready(function(){
-      $('#staff').hide();
-      $('.infra').hide();
-      $('.gallery').hide();
-      $('.contact').hide();
-      $('#staf').on('click',function(){
-        $('.cont').hide();
-        $('#staff').show();
-        $('.infra').hide();
-        $('.contact').hide();
-        $('.gallery').hide();
-
-      });
-
-      $('#contact').on('click',function(){
-        $('.cont').hide();
-        $('#staff').hide();
-        $('.gallery').hide();
-        $('.infra').hide();
-        $('.contact').show();
-
-      });
-
-      $('#home').on('click',function(){
-        $('.cont').show();
-        $('#staff').hide();
-        $('.gallery').hide();
-        $('.contact').hide();
-        $('.infra').hide();
-      });
-
-      $('#infrastruct').on('click',function(){
-        $('.infra').show();
-        $('#staff').hide();
-        $('.cont').hide();
-      });
-
-      $('#gallery').on('click',function(){
-        $('.gallery').show();
-        $('#staff').hide();
-        $('.cont').hide();
-        $('.contact').hide();
-      });
-    });
-  </script>
 
 </head>
 
 <body>
-	<!-- header -->
-	<header>
-		<!-- top header -->
-		<div class="top-head-w3ls py-2 bg-dark">
-			<div class="container">
-				<div class="row">
-					<h1 class="text-capitalize text-white col-7">
-						<i class="fas fa-book text-dark bg-white p-2 rounded-circle mr-3"></i>welcome to MIT,Thandavpura</h1>
-	
-						
-					<!-- social icons -->
-					<div class="social-icons text-right col-5">
-						<ul class="list-unstyled">
-							<li>
-								<a href="#" class="fab fa-facebook-f icon-borde facebook rounded-circle"> </a>
-							</li>
-							<li class="mx-2">
-								<a href="#" class="fab fa-twitter icon-border twitter rounded-circle"> </a>
-							</li>
-							<li>
-								<a href="#" class="fab fa-google-plus-g icon-border googleplus rounded-circle"> </a>
-							</li>
-							<li class="ml-2">
-								<a href="#" class="fas fa-rss icon-border rss rounded-circle"> </a>
-							</li>
-						</ul>
-					</div>
-					<!-- //social icons -->
-				</div>
-			</div>
-		</div>
-		<!-- //top header -->
-		<!-- middle header -->
-		
-		<!-- //middle header -->
-	</header>
-	<!-- //header -->
+<!-- header -->
+  <header style="background-color: #6f6f6f">
+    <!-- top header -->
+    <div  style="margin-top:5px;" class="top-head-w3ls py-2 navbar-expand-lg">
+      <div class="container">
+        <div class="row">
+          <img  class="img-rounded" src="images/mitt_logo.jpg" width="100px" height="50px"/>
+          <h1 class="text-capitalize  col-4" style="color: white" >
+            <i class="fas fa-book text-dark bg-white p-2 rounded-circle mr-3"></i>welcome to MIT,Thandavpura</h1>
+  
+          <a style="color:black;margin-left:2px;" href="mailto:Webmail@mitt.edu.in">
+          <img src="images/header/mail.png" id="mail" style="col-4" width="40px" height="30px" />
+            <span style="font-size: 15px;color: white">webmail.edu.in</span></a>      
 
+          <a style="color:black;margin-left:80px;" href="http://45.112.139.194:8088">
+          <img src="images/header/portal.png" id="mail" style="col-4" width="40px" height="30px" />
+           <span style="font-size: 15px;color: white">Student Portal</span></a>
+          <!-- social icons -->
+          <div  class="social-icons text-right col-3" style="margin-right:2px">
+            <ul class="list-unstyled">
+              <li>
+                <a style="background: orange;margin-top:-15px" href="#" class="fab fa-facebook icon-borde facebook rounded-circle"> </a>
+              </li>
+              <li class="mx-2">
+                <a style="background: orange;margin-top:-15px" href="#" class="fab fa-twitter icon-border twitter rounded-circle"> </a>
+              </li>
+              <li>
+                <a style="background: orange;margin-top:-15px" href="#" class="fab fa-youtube icon-border youtube rounded-circle"> </a>
+              </li>
+              
+              <img style="margin-right:5px;margin-left: 15px" class="img-rounded" src="images/met_logo.jpg" width="100px" height="50px"/>
+            </ul>
+
+          </div>
+          <!-- //social icons -->
+        </div>
+      </div>
+    </div>
+    <!-- //top header -->
+    <!-- middle header -->
+    
+    <!-- //middle header -->
+  </header>
+  <!-- //header -->
   <div class="navigation-w3ls" >
       <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-nav">
         <button class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -302,9 +263,9 @@
                       <div class="dropdown-divider"></div>
                       <a class="dropdown-item" href="social_media.html">Physics</a>
                       <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="social_media.html">Chemisry</a>
+                      <a class="dropdown-item" href="chemistry.html">Chemisry</a>
                       <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="social_media.html">Mathematics</a> 
+                      <a class="dropdown-item" href="math.html">Mathematics</a> 
                   </div>
               
               
@@ -385,12 +346,12 @@
   
   <div id="horizontalTab navbar navbar-expand-lg navbar-light bg-light sticky-nav">
     <ul class="resp-tabs-list justify-content-center nav nav-pills"  >
-      <li><button class="btn" id="home"><h3>Home</h3></button></li>
-      <li><button class="btn" id="infrastruct"><h3>Infrastructure</h3></button></li>
-      <li><button class="btn" id="staf"><h3>Staff</h3></button></li>
-      <li><button class="btn" id="activies"><h3>Activities</h3></button></li>
-      <li><button class="btn" id="gallery"><h3>Gallery</h3></button></li>
-      <li><button class="btn" id="contact"><h3>Contact</h3></button></li>
+      <li><button class="btn demo" id="home"><h3>Home</h3></button></li>
+      <li><button class="btn demo" id="infrastruct"><h3>Infrastructure</h3></button></li>
+      <li><button class="btn demo" id="staf"><h3>Staff</h3></button></li>
+      <li><button class="btn demo" id="activies"><h3>Activities</h3></button></li>
+      <li><button class="btn demo" id="gallery"><h3>Gallery</h3></button></li>
+      <li><button class="btn demo" id="contact"><h3>Contact</h3></button></li>
     </ul>
   </div>
   <br/>
@@ -400,20 +361,46 @@
     <div class="col-md-7" style="margin-left:30px">
       <h1 style="margin-left: 20px;color:black">ABOUT OUR DEPARTMENT</h1>
       <br/><br/>
+      <h2 style="color: black">Strength of the Department</h2><br/>
+      <div class="row">
+      <div class="col-md-3">
+        <img src="images/chetan.jpg" width="100px"alt="Chetan">
+        <h4 style="color: black">Dr H.K Chetan</h4>
+        <p style="color: black">Mentor</p>
+      </div>
+      <div class="col-md-2">
+        <img src="images/guru.jpg" width="90px" alt="Guru">
+        <h4 style="color: black">Dr D S Guru</h4>
+        <p style="color: black">Mentor</p>
+      </div>
+    </div>
+
       <p style="color:black">
-        Nothing is exciting in these times as the field of Computer Science. 
-        Being close to India’s Silicon Valley, young bright students are eager to pursue their graduation courses in this field. 
-        Ever since its inception in 1997, the Department has been a pioneering academic center for under graduation and post-graduation in the areas of Computer Science Engineering. 
-        It has assiduously pursued its mission of carrying out leading edge facilities in both foundational and Industry oriented problems.
+        The Department comprises of skilled and dedicated faculty Positions with Professors. This, combined
+        with the systematic teaching methodology and syllabus in line with the current technology, has ensured
+        excellent results at both examinations as well as competitive examinations by the students, as demonstrated by
+        the long track record of MIT ranks and an outstanding placement record. There are ample opportunities for
+        those inclined towards research as well, with experienced faculty and a wealth of resources. In order to fulfill
+        the objective of achieving academic excellence, the department is equipped with all infrastructure viz. Highly
+        qualified teaching faculty, state-of-the-art computing facilities and a sophisticated library housing voluminous
+        text books and periodicals. In addition, the following common facilities also contribute to the quality of
+        teaching-learning process.
       </p><br/>
+      <h1>Vision</h1><br/>
       <p style="color:black;">
-        The department is well equipped with good infrastructure such as latest computers, Laboratory Equipment's, 150 Mbps leased line connection & Wi-Fi Internet connectivity and well qualified faculty members.
+        “Architect Dedicated and Skilled Technocrats to compute the future”
       </p><br/>
-      <p style="color:black;">
-        The academic programs of the Department are highly innovative and keenly sought after. 
-        The Department has trained more than a thousand engineers who have distinguished themselves as leading academicians, industry professionals, 
-        and entrepreneurs in several universities and industries in India and abroad.
-      </p>
+      <h1>Mission</h1><br/>
+      <ul style="color:black; list-style-type: circle">
+        <li>To empower budding minds from rural sector with technology and skills.</li>
+        <li>To promote and encourage students towards innovative ideas and aid in development of unique skills.</li>
+        <li>Promote best practices in teaching-learning, with dedicated staff and supportive infrastructure to create
+technically competent engineers.</li>
+        <li>Inculcate ethical and cultural values, communication and Entrepreneurial skills.</li>
+        <li>Provide exposure of tools and technologies necessary to bridge the gap between academia and industry .</li>
+        <li>Encourage the youths to pursue career in Computer domain with modern innovations.</li>
+      </ul>
+      
     </div>
     <div class="col-md-4">
       <div style="text-align:center;">
@@ -433,32 +420,32 @@
        
         <div class="col-md-3 ">
           <div style="text-align:center">
-            <img style="margin-top:10px;width: 200px" src="images/cse/ranjith.JPG"  class="img-thumbnail" alt="Cinque Terre"> 
-             <p style="margin-top:2px;color: black"><strong>Prof. Ranjith</strong> </p>
-             <p style="color: black">BE,M.Tech,(Ph.d)</p>
-             <p style="color: black"><strong>Professor and Head</strong></p>
+            <a href="https://drive.google.com/open?id=1sDZcnWtb93qXPw6mWD6vBS-iN1JZh5KU"><img style="margin-top:10px;width: 200px" src="images/cse/chetan.JPG"  class="img-thumbnail" alt="Prof. Dr Chethan H K"> </a>
+             <p style="margin-top:2px;color: black"><strong>Prof. Dr Chethan H K</strong> </p>
+             <p style="color: black">BE,M.Tech,Ph.d</p>
+             
           </div>
         </div>
         <div class="col-md-3 ">
           <div style="text-align:center">  
-            <img style="margin-top:10px;width: 200px;height: 200px;transform:rotate(270deg)" src="images/cse/mallikarjun.JPG"  class="img-thumbnail" alt="Cinque Terre"> 
-            <p style="margin-top:2px;color: black"><strong>Prof. Mallikarjun</strong> </p>
+           <a href="https://drive.google.com/open?id=1yE8UflmeynS3XvRT1b1USb-Ez4KkkP2W"> <img style="margin-top:10px;width: 200px;height: 200px;transform:rotate(270deg)" src="images/cse/mallikarjun.JPG"  class="img-thumbnail" alt="Prof. MALLIKARJUNASWAMY N J"></a> 
+            <p style="margin-top:2px;color: black"><strong>Prof. MALLIKARJUNASWAMY N J</strong> </p>
             <p >Associate Professor</p>
             <p style="color: black">BE,M.Tech,(Ph.d)</p>
           </div>
         </div>
         <div class="col-md-3 ">
           <div style="text-align:center">
-            <img style="margin-top:10px;width: 200px;height: 200px;transform:rotate(270deg)" src="images/cse/suhasini.JPG"  class="img-thumbnail" alt="Cinque Terre">
-            <p style="margin-top:2px;color: black"><strong>Prof. Suhasini</strong> </p>
+            <a href="https://drive.google.com/open?id=192tJo1m2KuPlqjkyqyfMaZQjoHWRwhf1"><img style="margin-top:10px;width: 200px;height: 200px;" src="images/cse/ranjith.JPG"  class="img-thumbnail" alt="Prof. RANJIT K N"></a>
+            <p style="margin-top:2px;color: black"><strong>Prof. RANJIT K N</strong> </p>
             <p>Associate Professor</p>
             <p style="color: black">BE,M.Tech,(Ph.d)</p> 
           </div>
         </div>
         <div class="col-md-3 ">
           <div style="text-align:center">
-            <img style="margin-top:10px;width: 200px;height: 200px;transform:rotate(270deg)" src="images/cse/hemanth.JPG"  class="img-thumbnail" alt="Cinque Terre"> 
-            <p style="margin-top:2px;color: black"><strong>Prof. Hemanth Kumar</strong> </p>
+            <a href="https://drive.google.com/open?id=1K1EEPuOb2i3HVvRJXpJy8FklRk3pAg2m"><img style="margin-top:10px;width: 200px;height: 200px;transform:rotate(270deg)" src="images/cse/suhasini.JPG"  class="img-thumbnail" alt="Prof. SUHASINI"> </a>
+            <p style="margin-top:2px;color: black"><strong>Prof. SUHASINI</strong> </p>
             <p >Associate Professor</p>
             <p style="color: black">BE,M.Tech,(Ph.d)</p>
           </div>
@@ -467,8 +454,16 @@
     <div class="row">
       <div class="col-md-3 ">
           <div style="text-align:center">
-            <img style="margin-top:10px;width: 200px;height: 200px;transform:rotate(270deg)" src="images/cse/bharath.JPG"  class="img-thumbnail" alt="Cinque Terre"> 
-            <p style="margin-top:2px;color: black"><strong>Prof. Bharath Kumar</strong> </p>
+            <a href=""><img style="margin-top:10px;width: 200px;height: 200px;transform:rotate(270deg)" src="images/cse/hemanth.JPG"  class="img-thumbnail" alt="Prof. Hemanth"> </a>
+            <p style="margin-top:2px;color: black"><strong>Prof. Hemanth</strong> </p>
+            <p >Associate Professor</p>
+            <p style="color: black">BE,M.Tech,(Ph.d)</p>
+          </div>
+        </div>
+        <div class="col-md-3 ">
+          <div style="text-align:center">
+            <a href="https://drive.google.com/open?id=1VtnjHMTjAaDQeWf46AGrhOM5xL2O5c1a"><img style="margin-top:10px;width: 200px;height: 200px;transform:rotate(270deg)" src="images/cse/bharath.JPG"  class="img-thumbnail" alt="Prof. Bharath Bharadwaj B S"> </a>
+            <p style="margin-top:2px;color: black"><strong>Prof. Bharath Bharadwaj B S</strong> </p>
             <p >Associate Professor</p>
             <p style="color: black">BE,M.Tech,(Ph.d)</p>
           </div>
@@ -478,28 +473,287 @@
   </div>
   
   <!--end of staff photos-->
-  
+  <!-- activities --->
+  <div id="activity">
+    <div class="row">
+      <div class="col-md-11">
+        <h1>TECHNICAL TALKS ORGANIZED BY DEPARTEMENT</h1><br/>
+        <table style="margin-left:10px;color: black" class="table-bordered" style="text-align: center">
+          <tr>
+            <th style="text-align: center;width: 100px">
+              Sl No
+            </th>
+            <th style="text-align: center;">
+              Resource Person with Training Company Name
+            </th>
+            <th style="text-align: center;">
+              Title
+            </th>
+            <th style="text-align: center;">
+              Participants(semester) With Number
+            </th>
+            <th style="text-align: center;width: 100px">
+              Date
+            </th>
+        </tr>
+        <tr>
+          <td style="text-align: center;width: 100px">
+            1
+          </td>
+          <td style="text-align: center">
+            Dr. D. S. Guru, Professor and Nodal Officer, CBCS Education, University of Mysuru.
+          </td>
+          <td style="text-align: center">
+            comparison of ancient human life to current life style
+          </td>
+          <td style="text-align: center">
+            3rd SEM
+          </td>
+          <td style="text-align:center">
+            5-5-2016
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align:center">
+            2
+          </td>
+          <td style="text-align:center">
+            Dr Uma Professor and Head, Department of ISE,  MCE Hassan.
+          </td>
+          <td style="text-align:center">
+            Data Structures and Its Applications with practical examples through live and creative activities.
+          </td>
+          <td style="text-align:center">
+            4rd SEM
+          </td>
+          <td style="text-align:center">
+            5-5-2016
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align:center">
+            3
+          </td>
+          <td style="text-align:center">
+            Dr. Shivakumara Palaiahnakote, Department Of Computer System & Technology, Faculty Of Computer Science & Information Technology, University of Malaya, Malaysia.
+          </td>
+          <td style="text-align:center">
+            Highlighted the usage of existing technology in real-time application and importance of computer science and information technology. 
+          </td>
+          <td style="text-align:center">
+            4rd SEM
+          </td>
+          <td style="text-align:center"> 
+            5-5-2016
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align:center">
+            4
+          </td>
+          <td style="text-align:center">
+            Mr. SUMANTH PRABHU, co-founder and director KIDVENTO Mysuru.
+          </td>
+          <td style="text-align:center">
+            Ignite the Entrepreneurial spirit in you!
+          </td>
+          <td style="text-align:center">
+            4th SEM
+          </td>
+          <td style="text-align:center"> 
+            5-5-2016
+          </td>
+        </tr>  <br/>
+        <tr>
+          <td style="text-align:center">
+            5
+          </td>
+          <td style="text-align:center">
+            Mr. Varuna, CEO, Eudaemonic Systems, Mysore.
+          </td>
+          <td style="text-align:center">
+            Software Engineering and Industry Prospective
+          </td>
+          <td style="text-align:center">
+            4th SEM
+          </td>
+          <td style="text-align:center"> 
+            5-5-2016
+          </td>
+        </tr>         
+        </table><br/><br/>
+
+      </div>
+    </div>
+
+  <div class="row">
+      <div class="col-md-11">
+        <h1 style="color: black;margin-left:30px">Workshops Conducted</h1><br/>
+        <table style="margin-left:10px;color: black" class="table-bordered" style="text-align: center">
+          <tr>
+            <th style="text-align: center;width: 100px">
+              Sl No
+            </th>
+            <th style="text-align: center;">
+              Resource Person with Training Company Name
+            </th>
+            <th style="text-align: center;">
+              Title
+            </th>
+            <th style="text-align: center;">
+              Participants(semester) With Number
+            </th>
+            <th style="text-align: center;width: 100px">
+              Date
+            </th>
+        </tr>
+        <tr>
+          <td style="text-align: center;width: 100px">
+            1
+          </td>
+          <td style="text-align: center">
+            Dr. D. S. Guru, Professor and Nodal Officer, CBCS Education, University of Mysuru.
+          </td>
+          <td style="text-align: center">
+            comparison of ancient human life to current life style
+          </td>
+          <td style="text-align: center">
+            3rd SEM
+          </td>
+          <td style="text-align:center">
+            5-5-2016
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align:center">
+            2
+          </td>
+          <td style="text-align:center">
+            Dr Uma Professor and Head, Department of ISE,  MCE Hassan.
+          </td>
+          <td style="text-align:center">
+            Data Structures and Its Applications with practical examples through live and creative activities.
+          </td>
+          <td style="text-align:center">
+            4rd SEM
+          </td>
+          <td style="text-align:center">
+            5-5-2016
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align:center">
+            3
+          </td>
+          <td style="text-align:center">
+            Dr. Shivakumara Palaiahnakote, Department Of Computer System & Technology, Faculty Of Computer Science & Information Technology, University of Malaya, Malaysia.
+          </td>
+          <td style="text-align:center">
+            Highlighted the usage of existing technology in real-time application and importance of computer science and information technology. 
+          </td>
+          <td style="text-align:center">
+            4rd SEM
+          </td>
+          <td style="text-align:center"> 
+            5-5-2016
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align:center">
+            4
+          </td>
+          <td style="text-align:center">
+            Mr. SUMANTH PRABHU, co-founder and director KIDVENTO Mysuru.
+          </td>
+          <td style="text-align:center">
+            Ignite the Entrepreneurial spirit in you!
+          </td>
+          <td style="text-align:center">
+            4th SEM
+          </td>
+          <td style="text-align:center"> 
+            5-5-2016
+          </td>
+        </tr>  <br/>
+        <tr>
+          <td style="text-align:center">
+            5
+          </td>
+          <td style="text-align:center">
+            Mr. Varuna, CEO, Eudaemonic Systems, Mysore.
+          </td>
+          <td style="text-align:center">
+            Software Engineering and Industry Prospective
+          </td>
+          <td style="text-align:center">
+            4th SEM
+          </td>
+          <td style="text-align:center"> 
+            5-5-2016
+          </td>
+        </tr>         
+        </table><br/><br/>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!--end of activities -->
   <!--infrastructure-->
   <div class="infra">
     <div class="row">
       <div class="col-md-12"  style="margin-left:30px;margin-top:10px">
         <h1 style="color:black;font-size: 40px;">Our Infrastructure and Laboratories</h1>
        <!--<p style="color:black;margin-left:10px "><strong>setup state-of-art laboratories like</strong></p>--> 
-        <ol style="color:black;margin-left:20px;font-size:20px; ">
+        <ol style="color:black;margin-left:20px;font-size:20px;" class="col-md-10">
           <br><br>
-          <li>Computer System Software & operating system Lab</li>
-          <li>Computer design & analysis of Algorithms Lab</li>
-          <li>Unix system & Web programming Lab</li>
-          <li>Networks Lab</li>
-          <li>Computer Graphics Lab</li>
-          <li>Database Application Lab</li>
-          <li>Microprocessor Lab</li>
-          <li>Data Structures with C/C++ Lab</li>
-          <li>Analog & Digital Electronics lab</li>
-          <li>R&D/Project Lab</li>
+          <li><h2>Programming in C </h2>
+            <p style="color:black">C is the most commonly used programming language for writing operating systems. The first operating system written in C is Unix. Later operating systems like GNU/Linux were all written in C. Not only is C the language of operating systems, it is the precursor and inspiration for almost all of the most popular high-level languages available today. In fact, Perl, PHP, Python and Ruby are all written in C. <br/>
+            This laboratory will anable the students to familiarize with wiiting algorithms, fundamentals of C and problem solving, Implement different programming constructs and decomposition of problems into functions, Use and implement the data stuctures like arrays and structures to obtain solutions.</p>
+          </li>
+          <li><h2>Analog and Digital Electronics Lab</h2>
+            <p style="color:black">
+              This laboratory enable students to get practical experience in design, assembly and evaluation/testing of analog components and circuits. the students can able to,Use various Electronic Devices like Cathode ray Oscilloscope, Signal generators, DigitalTrainer Kit, Multimeters and components like Resistors, Capacitors, Op amp and Integrated Circuit.</p>
+          </li>
+          <li><h2>Data structures with C/C++ lab</h2>
+            <p style="color:black">
+              This laboratory course enable students to get practical experience in design, develop, implement,analyze and testing of  Linear data structures and their applications such as stacks, queues and listsand Non-Linear data structures and their applications such as trees and graphs, Later this lab enable the student to Choose the appropriate data structure for solving real world problems.</p>
+          </li>
+          <li><h2>Design and Analysis of Algorithm Lab with C++</h2>
+            <p style="color:black">
+              This laboratory enable the  students to Design and implement various algorithms in JAVA language.and even Employ the various design strategies for problem solving.This laboratory helps the student to Measure and compare the performance of different algorithms.</p>
+          </li>
+          <li><h2>Microprocessor Lab</h2>
+            <p style="color:black">
+              This laboratory enable the students to provide practical exposure to the students on microprocessors, design and coding knowledge on 80x86 family/ARM. The ARM laboratory includes a platform for developing and testing software related to ARM architecture and many basics of ARM programming Principles.</p>
+          </li>
+          <li><h2>Database Applications Laboratory</h2>
+            <p style="color:black">
+              This laboratory will enable students to Foundation knowledge in database concepts, technology and practice to groom students into well-informed database application developers. And also enable the students to perform the Strong practice in SQL programming through a variety of database problems. Students can able to Develop database applications using front-end tools and back-end DBMS</p>
+          </li>
+          <li><h2>System Software and Compiler design Laboratory</h2>
+            <p style="color:black">
+              This course will enable students to Define System Software such as Assemblers, Loaders, Linkers and Macroprocessors, Familiarize with source file, object file and executable file structures and libraries and Describe the front-end and back-end phases of compiler and their importance.</p>
+          </li>
+          <li><h2>Software Testing Laboratory</h2>
+            <p style="color:black">
+              This laboratory will enable students to Differentiate the various testing techniques, Analyze the problem and derive suitable test cases, Apply suitable technique for designing of flow graph and Explain the need for planning and monitoring a process</p>
+          </li>
+          <li><h2>Networks Laboratory</h2>
+            <p style="color:black">
+              This laboratory will enable students to  Demonstrate operation of network and its management commandsstudents can Simulate(Using NS2/NS3) and demonstrate the performance of GSM and CDMA.and also students can Implement data link layer and transport layer protocols.</p>
+          </li>
+          <li><h2>COMPUTER GRAPHICS AND VISUALIZATION</h2>
+            <p style="color:black">
+              This laboratory will enable students to  Demonstrate operation of network and its management commandsstudents can Simulate(Using NS2/NS3) and demonstrate the performance of GSM and CDMA.and also students can Implement data link layer and transport layer protocols.</p>
+          </li>
+          <li><h2>File Structures Laboratory</h2>
+            <p style="color:black">
+              This laboratory  will enable students to Explain the fundamentals of file structures and their management, Measure the performance of different file structures, Organize different file structures in the memory and Demonstrate hashing and indexing techniques..</p>
+          </li>
 
         </ol>
-
       </div>
     </div><br/><br/>
     <div class="row" style="margin-left:10px">
