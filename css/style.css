@@ -12,6 +12,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     color: #fff
 }
 
+.text_brown{
+    color: #330000;
+}
 
 body {
     padding: 0;
@@ -138,6 +141,10 @@ a:hover {
 .top-head-w3ls h1 {
     font-size: 15px;
     letter-spacing: 1px;
+}
+
+.wit-font{
+    color: white;
 }
 
 .agile-addresmk p a {
@@ -269,7 +276,8 @@ a.button-head-mow3 {
 /* navigation */
 
 .bg-light {
-    background: linear-gradient(to bottom, #eb9423, #ec992c);
+    /*background: linear-gradient(to bottom, #eb9423, #ec992c);*/
+    background-image: linear-gradient(#49688e, #49688e)
 }
 
 li.nav-item a {
@@ -339,7 +347,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.sticky-nav {
 }
 
 .banner-w3ls-1 {
-    background: url(../images/index/slider1.JPG) no-repeat center;
+    background: url(../images/index/slider1.jpg) no-repeat center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -359,7 +367,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.sticky-nav {
 }
 
 .banner-w3ls-3 {
-    background: url(../images/index/slider3.jpg) no-repeat center;
+    background: url(../images/index/slider7.jpg) no-repeat center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -3288,7 +3296,7 @@ li.subitem1 p {
 .btn{
     width: 120px;
     height: 40px;
-    background-color: #eb7608;
+    background-color: #49688e;
     color: #fff;
 }
 
