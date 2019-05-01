@@ -31,7 +31,7 @@
 <script>
     // Get the modal
     var modal = document.getElementById('myModal');
-    
+
     // Get the image and insert it inside the modal - use its "alt" text as a caption
     var img = document.getElementById('myImg');
     var modalImg = document.getElementById("img01");
@@ -41,28 +41,28 @@
       modalImg.src = this.src;
       captionText.innerHTML = this.alt;
     }
-    
+
     // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close")[0];
-    
+
     // When the user clicks on <span> (x), close the modal
-    span.onclick = function() { 
+    span.onclick = function() {
       modal.style.display = "none";
     }
     </script>
-  
+
 
   <!-- This is for Displaying the original pic for Gallary-->
   <style>
- 
+
    #myImg {
         border-radius: 5px;
         cursor: pointer;
         transition: 0.3s;
       }
-      
+
       #myImg:hover {opacity: 0.7;}
-      
+
       /* The Modal (background) */
       .modal {
         display: none; /* Hidden by default */
@@ -77,7 +77,7 @@
         background-color: rgb(0,0,0); /* Fallback color */
         background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
       }
-      
+
       /* Modal Content (image) */
       .modal-content {
         margin: auto;
@@ -85,7 +85,7 @@
         width: 80%;
         max-width: 700px;
       }
-      
+
       /* Caption of Modal Image */
       #caption {
         margin: auto;
@@ -97,25 +97,25 @@
         padding: 10px 0;
         height: 150px;
       }
-      
+
       /* Add Animation */
-      .modal-content, #caption {  
+      .modal-content, #caption {
         -webkit-animation-name: zoom;
         -webkit-animation-duration: 0.6s;
         animation-name: zoom;
         animation-duration: 0.6s;
       }
-      
+
       @-webkit-keyframes zoom {
-        from {-webkit-transform:scale(0)} 
+        from {-webkit-transform:scale(0)}
         to {-webkit-transform:scale(1)}
       }
-      
+
       @keyframes zoom {
-        from {transform:scale(0)} 
+        from {transform:scale(0)}
         to {transform:scale(1)}
       }
-      
+
       /* The Close Button */
       .close {
         position: absolute;
@@ -126,14 +126,14 @@
         font-weight: bold;
         transition: 0.3s;
       }
-      
+
       .close:hover,
       .close:focus {
         color: #bbb;
         text-decoration: none;
         cursor: pointer;
       }
-      
+
       /* 100% Image Width on Smaller Screens */
       @media only screen and (max-width: 700px){
         .modal-content {
@@ -161,7 +161,7 @@
 	 rel="stylesheet">
 	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
   <!-- //Web-Fonts -->
-  
+
 </head>
 
 <body>
@@ -174,10 +174,10 @@
           <img  class="img-rounded" src="images/mitt_logo.jpg" width="100px" height="50px"/>
           <h1 class="text-capitalize  col-4" style="color: white" >
             <i class="fas fa-book text-dark bg-white p-2 rounded-circle mr-3"></i>welcome to MIT,Thandavpura</h1>
-  
+
           <a style="color:black;margin-left:2px;" href="mailto:Webmail@mitt.edu.in">
           <img src="images/header/mail.png" id="mail" style="col-4" width="40px" height="30px" />
-            <span style="font-size: 15px;color: white">webmail.edu.in</span></a>      
+            <span style="font-size: 15px;color: white">webmail.edu.in</span></a>
 
           <a style="color:black;margin-left:80px;" href="http://45.112.139.194:8088">
           <img src="images/header/portal.png" id="mail" style="col-4" width="40px" height="30px" />
@@ -194,7 +194,7 @@
               <li>
                 <a style="background: orange;margin-top:-15px" href="#" class="fab fa-youtube icon-border youtube rounded-circle"> </a>
               </li>
-              
+
               <img style="margin-right:5px;margin-left: 15px" class="img-rounded" src="images/met_logo.jpg" width="100px" height="50px"/>
             </ul>
 
@@ -205,7 +205,7 @@
     </div>
     <!-- //top header -->
     <!-- middle header -->
-    
+
     <!-- //middle header -->
   </header>
   <!-- //header -->
@@ -265,11 +265,11 @@
                       <div class="dropdown-divider"></div>
                       <a class="dropdown-item" href="social_media.html">Chemisry</a>
                       <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="social_media.html">Mathematics</a> 
+                      <a class="dropdown-item" href="social_media.html">Mathematics</a>
                   </div>
-              
-              
-            
+
+
+
 
             </li>
             <li class="nav-item dropdown" style="margin-left:50px">
@@ -281,7 +281,7 @@
                 <a class="dropdown-item" href="tap.html">Training & Placements</a>
                 <a class="dropdown-item" href="login.html">Sports</a>
                 <a class="dropdown-item" href="register.html">Gallery</a>
-                
+
 
                 <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Facility
@@ -289,7 +289,7 @@
               <div class="dropdown-menu" style="margin-left: 50px">
                 <a class="dropdown-item" href="mitt.html">Canteen & Information Center</a>
                 <a class="dropdown-item" href="index.html">Transportation</a>
-              
+
               </div>
 
               </div>
@@ -319,20 +319,20 @@
     <img class="mySlides" src="images/mech/index/slider4.jpg" style="width:100%;height: 500px;">
     <img class="mySlides" src="images/mech/index/slider5.jpg" style="width:100%;height: 500px;">
   </div>
-  
+
   <script>
   var myIndex = 0;
   carousel();
-  
+
   function carousel() {
     var i;
     var x = document.getElementsByClassName("mySlides");
     for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";  
+      x[i].style.display = "none";
     }
     myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
     setTimeout(carousel, 2000); // Change image every 2 seconds
   }
   </script>
@@ -345,7 +345,7 @@
 
 
 
-  
+
   <div id="horizontalTab navbar navbar-expand-lg navbar-light bg-light sticky-nav">
     <ul class="resp-tabs-list justify-content-center nav nav-pills" >
       <li><button class="btn demo" id="home"><h3>Home</h3></button></li>
@@ -357,30 +357,30 @@
     </ul>
   </div>
   <br/>
- 
-  
+
+
   <div class="row cont">
     <div class="col-md-7" style="margin-left:30px">
       <h1 style="margin-left: 00px;color:#49688e;font-weight: bold;">ABOUT OUR DEPARTMENT</h1>
       <br/><br/>
       <p style="color:black;text-align: justify;">
-        Nothing is exciting in these times as the field of Computer Science. 
-        Being close to India’s Silicon Valley, young bright students are eager to pursue their graduation courses in this field. 
-        Ever since its inception in 1997, the Department has been a pioneering academic center for under graduation and post-graduation in the areas of Computer Science Engineering. 
+        Nothing is exciting in these times as the field of Computer Science.
+        Being close to India’s Silicon Valley, young bright students are eager to pursue their graduation courses in this field.
+        Ever since its inception in 1997, the Department has been a pioneering academic center for under graduation and post-graduation in the areas of Computer Science Engineering.
         It has assiduously pursued its mission of carrying out leading edge facilities in both foundational and Industry oriented problems.
       </p><br/>
       <p style="color:black;text-align: justify;">
         The department is well equipped with good infrastructure such as latest computers, Laboratory Equipment's, 150 Mbps leased line connection & Wi-Fi Internet connectivity and well qualified faculty members.
       </p><br/>
       <p style="color:black;text-align: justify;">
-        The academic programs of the Department are highly innovative and keenly sought after. 
-        The Department has trained more than a thousand engineers who have distinguished themselves as leading academicians, industry professionals, 
+        The academic programs of the Department are highly innovative and keenly sought after.
+        The Department has trained more than a thousand engineers who have distinguished themselves as leading academicians, industry professionals,
         and entrepreneurs in several universities and industries in India and abroad.
       </p>
     </div>
     <div class="col-md-4">
       <div style="text-align:center;">
-        <img style="margin-top:10px" src="images/hod/mech.jpeg"  class="img-thumbnail" alt="Cinque Terre"> 
+        <img style="margin-top:10px" src="images/hod/mech.jpeg"  class="img-thumbnail" alt="Cinque Terre">
         <p style="margin-top:2px;color: black"><strong>Prof. Shreyas C</strong> </p>
         <p style="color: black">BE,M.Tech,(Ph.D)</p>
         <p style="color: black"><strong>Professor and Head</strong></p>
@@ -388,23 +388,23 @@
       </div>
     </div>
     </div>
-  
-    
+
+
     <!--staff photos-->
-    <div id="staff">    
+    <div id="staff">
       <div class="row "><!-- First row -->
-       
+
         <div class="col-md-3 ">
           <div style="text-align:center">
-            <a href="https://drive.google.com/open?id=1pY2cweYMIjrclXLDTwuJpj8tZ646fzHg"><img style="margin-top:10px;width: 200px" src="images/mech/staff/Sreyas.jpg"  class="img-thumbnail" alt="Cinque Terre"></a> 
+            <a href="https://drive.google.com/open?id=1pY2cweYMIjrclXLDTwuJpj8tZ646fzHg"><img style="margin-top:10px;width: 200px" src="images/mech/staff/Sreyas.jpg"  class="img-thumbnail" alt="Cinque Terre"></a>
              <p style="margin-top:2px;color: black"><strong>Prof. Sreyas C</strong> </p>
              <p style="color: black"><strong>Professor and Head</strong></p>
              <p style="color: black">BE,M.Tech,(Ph.D)</p>
           </div>
         </div>
         <div class="col-md-3 ">
-          <div style="text-align:center">  
-            <a href="https://drive.google.com/open?id=1-Au-8JArNLboOwrwBPAz8mx6Fet2Qekh"><img style="margin-top:10px;width: 200px" src="images/mech/staff/Ajay.jpg"  class="img-thumbnail" alt="Cinque Terre"></a> 
+          <div style="text-align:center">
+            <a href="https://drive.google.com/open?id=1-Au-8JArNLboOwrwBPAz8mx6Fet2Qekh"><img style="margin-top:10px;width: 200px" src="images/mech/staff/Ajay.jpg"  class="img-thumbnail" alt="Cinque Terre"></a>
             <p style="margin-top:2px;color: black"><strong>Prof. Ajay Kumar</strong> </p>
             <p style="color: black">BE,M.Tech,(Ph.D)</p>
             <p >Associate Professor</p>
@@ -415,12 +415,12 @@
             <a href="https://drive.google.com/open?id=1Y2W6z8cbvvwpDxfH-psyJue1-cXwTcjU"><img style="margin-top:10px;width: 200px" src="images/mech/staff/Prabodh.jpg"  class="img-thumbnail" alt="Cinque Terre"></a>
             <p style="margin-top:2px;color: black"><strong>Prof. Prabhodh</strong> </p>
             <p style="color: black">BE,M.Tech,(Ph.D)</p>
-            <p>Associate Professor</p> 
+            <p>Associate Professor</p>
           </div>
         </div>
         <div class="col-md-3 ">
           <div style="text-align:center">
-            <a href="https://drive.google.com/open?id=1KyerV5k50Xf36EbnC973unFZHmQkHevW"><img style="margin-top:10px;width: 200px" src="images/mech/staff/Yashvanth.jpg"  class="img-thumbnail" alt="Cinque Terre"></a> 
+            <a href="https://drive.google.com/open?id=1KyerV5k50Xf36EbnC973unFZHmQkHevW"><img style="margin-top:10px;width: 200px" src="images/mech/staff/Yashvanth.jpg"  class="img-thumbnail" alt="Cinque Terre"></a>
             <p style="margin-top:2px;color: black"><strong>Prof. Yashvanth</strong> </p>
             <p style="color: black">BE,M.Tech,(Ph.D)</p>
             <p >Associate Professor</p>
@@ -431,18 +431,18 @@
         <div class="row">
            <div class="col-md-3 ">
           <div style="text-align:center">
-            <a href="https://drive.google.com/open?id=1W_I9BByvOODeyj1hb3K6QKCzRuuf34cu"><img style="margin-top:10px;width: 200px" src="images/mech/staff/Abhishek.JPG"  class="img-thumbnail" alt="Cinque Terre"></a> 
+            <a href="https://drive.google.com/open?id=1W_I9BByvOODeyj1hb3K6QKCzRuuf34cu"><img style="margin-top:10px;width: 200px" src="images/mech/staff/Abhishek.JPG"  class="img-thumbnail" alt="Cinque Terre"></a>
              <p style="margin-top:2px;color: black"><strong>Prof. Abhishek</strong> </p>
-             <p style="color: black">BE,M.Tech,(Ph.D)</p>
+             <p style="color: black">BE,M.Tech</p>
              <p >Associate Professor</p>
-             
+
           </div>
         </div>
         <div class="col-md-3 ">
-          <div style="text-align:center">  
-            <a href="https://drive.google.com/open?id=1d1Dv9-ZyDoVCDIarA2dQG-q2s9Ro55GG"><img style="margin-top:10px;width: 200px" src="images/mech/staff/Ravikumar.JPG"  class="img-thumbnail" alt="Cinque Terre"></a> 
+          <div style="text-align:center">
+            <a href="https://drive.google.com/open?id=1d1Dv9-ZyDoVCDIarA2dQG-q2s9Ro55GG"><img style="margin-top:10px;width: 200px" src="images/mech/staff/Ravikumar.JPG"  class="img-thumbnail" alt="Cinque Terre"></a>
             <p style="margin-top:2px;color: black"><strong>Prof. Ravikumar</strong> </p>
-            <p style="color: black">BE,M.Tech,(Ph.D)</p>
+            <p style="color: black">BE,M.Tech</p>
             <p >Associate Professor</p>
           </div>
         </div>
@@ -450,7 +450,7 @@
           <div style="text-align:center">
             <a href="https://drive.google.com/open?id=1mq-Y4k3b4c-m3ygFVPxcSYyY-5NLi-v-"><img style="margin-top:10px;width: 200px" src="images/mech/staff/Santhosh.JPG"  class="img-thumbnail" alt="Cinque Terre"></a>
             <p style="margin-top:2px;color: black"><strong>Santhosh</strong> </p>
-            <p style="color: black">BE,M.Tech,(Ph.D)</p> 
+            <p style="color: black">Diploma</p>
             <p >Associate Professor</p>
           </div>
         </div>
@@ -458,7 +458,7 @@
           <div style="text-align:center">
             <a href="https://drive.google.com/open?id=18pJFkaYbN7_H7b7s56nTqgHkPOFPHncY"><img style="margin-top:10px;width: 200px" src="images/mech/staff/Manu.jpg"  class="img-thumbnail" alt="Cinque Terre"> </a>
             <p style="margin-top:2px;color: black"><strong>Manu</strong> </p>
-            <p style="color: black">BE,M.Tech,(Ph.D)</p>
+            <p style="color: black">Diploma</p>
             <p >Associate Professor</p>
           </div>
         </div>
@@ -468,24 +468,24 @@
           <div style="text-align:center">
             <a href=""><img style="margin-top:10px;width: 200px" src="images/mech/staff/dayananda.jpg"  class="img-thumbnail" alt="Cinque Terre"> </a>
             <p style="margin-top:2px;color: black"><strong>Dayananda</strong> </p>
-            
-            <p style="color: black">BE,M.Tech,(Ph.D)</p>
-            <a href="#"><p >Associate Professor</p></a>
+
+          <!--  <p style="color: black">BE,M.Tech,(Ph.D)</p>
+            <a href="#"><p >Associate Professor</p></a> -->
           </div>
         </div>
       </div>
     </div>
   </div>
   </div>
-  
+
   <!--end of staff photos-->
-  
+
   <!--infrastructure-->
   <div class="infra">
     <div class="row">
       <div class="col-md-12"  style="margin-left:30px;margin-top:10px">
         <h1 style="margin-left: 00px;color:#49688e;font-weight: bold;">Our Infrastructure and Laboratories</h1>
-       <!--<p style="color:black;margin-left:10px "><strong>setup state-of-art laboratories like</strong></p>--> 
+       <!--<p style="color:black;margin-left:10px "><strong>setup state-of-art laboratories like</strong></p>-->
         <ol style="color:black;margin-left:20px;font-size:20px; ">
           <br><br>
           <li>Computer System Software & operating system Lab</li>
@@ -505,16 +505,16 @@
     </div><br/><br/>
     <div class="row" style="margin-left:10px">
       <div class="col-md-3">
-          <img src="images/mech/Labs/Fluid_Mechanics_Laboratory.JPG" style="height:300px" class="img-thumbnail" alt="Cinque Terre"> 
+          <img src="images/mech/Labs/Fluid_Mechanics_Laboratory.JPG" style="height:300px" class="img-thumbnail" alt="Cinque Terre">
       </div>
       <div class="col-md-3">
-          <img src="images/mech/Labs/Foundry and Forging Laboratory.JPG" style="height:300px" class="img-thumbnail" alt="Cinque Terre"> 
+          <img src="images/mech/Labs/Foundry and Forging Laboratory.JPG" style="height:300px" class="img-thumbnail" alt="Cinque Terre">
       </div>
       <div class="col-md-3">
-          <img src="images/mech/Labs/Machine_Shop.jpg" style="height:300px" class="img-thumbnail" alt="Cinque Terre"> 
+          <img src="images/mech/Labs/Machine_Shop.jpg" style="height:300px" class="img-thumbnail" alt="Cinque Terre">
       </div>
       <div class="col-md-3">
-          <img src="images/mech/Labs/Material_Testing_Laboratory.JPG" style="height:300px" class="img-thumbnail" alt="Cinque Terre"> 
+          <img src="images/mech/Labs/Material_Testing_Laboratory.JPG" style="height:300px" class="img-thumbnail" alt="Cinque Terre">
       </div>
     </div><br/><br/>
     <div class="row" style="margin-left:30px">
@@ -527,21 +527,21 @@
       <div class="col-md-12">
         <h1 style="margin-left: 00px;color:#49688e;font-weight: bold;">Security Surveillance</h1>
         <p style="color:black;margin-left:10px">– CCTV surveillance in entire Computer Science block</p><br/><br/>
-        <img style="margin-left:30%" src="images/t5.jpg" class="img-thumbnail" alt="Cinque Terre"> 
+        <img style="margin-left:30%" src="images/t5.jpg" class="img-thumbnail" alt="Cinque Terre">
       </div>
     </div><br/><br/>
     <div class="row" style="margin-left:30px">
       <div class="col-md-12">
         <h1 style="margin-left: 00px;color:#49688e;font-weight: bold;">CLASS ROOMS</h1>
         <p style="color:black;margin-left:10px">– Lecture halls equipped with multimedia Projectors , CCTV& impartus Video Lecture recording</p><br/><br/>
-        <img style="margin-left:30%" src="images/t5.jpg" class="img-thumbnail" alt="Cinque Terre"> 
+        <img style="margin-left:30%" src="images/t5.jpg" class="img-thumbnail" alt="Cinque Terre">
       </div>
     </div><br/><br/>
     <div class="row" style="margin-left:30px">
         <div class="col-md-12">
           <h1 style="margin-left: 00px;color:#49688e;font-weight: bold;">HOD’s Room, Faculty Rooms & Department Office</h1>
           <br/><br/>
-          <img style="margin-left:30%" src="images/t5.jpg" class="img-thumbnail" alt="Cinque Terre"> 
+          <img style="margin-left:30%" src="images/t5.jpg" class="img-thumbnail" alt="Cinque Terre">
         </div>
       </div><br/><br/>
       <div class="row" style="margin-left:30px">
@@ -563,42 +563,42 @@
         </div>
   </div>
 
-  
+
   <!--gallery-->
   <div class="gallery" style="margin-left:20px">
     <h1 style="margin-left: 00px;color:#49688e;font-weight: bold;">Gallery</h1>
     <br><br>
     <div class="row" >
       <div class="col-md-4">
-        <img id="myImg" src="images/mech/index/slider1.JPG" alt="Something" class="img-thumbnail" alt="Cinque Terre"> 
+        <img id="myImg" src="images/mech/index/slider1.JPG" alt="Something" class="img-thumbnail" alt="Cinque Terre">
       </div>
       <div class="col-md-4">
-          <img id="myImg" src="images/mech/index/slider2.jpg" alt="Something" class="img-thumbnail" alt="Cinque Terre"> 
+          <img id="myImg" src="images/mech/index/slider2.jpg" alt="Something" class="img-thumbnail" alt="Cinque Terre">
       </div>
       <div class="col-md-4">
-          <img src="images/mech/index/slider3.JPG" class="img-thumbnail" alt="Cinque Terre"> 
+          <img src="images/mech/index/slider3.JPG" class="img-thumbnail" alt="Cinque Terre">
       </div>
     </div>
     <div class="row" style="margin-top:5px">
         <div class="col-md-4">
-          <img src="images/mech/index/slider4.jpg" class="img-thumbnail" alt="Cinque Terre"> 
+          <img src="images/mech/index/slider4.jpg" class="img-thumbnail" alt="Cinque Terre">
         </div>
         <div class="col-md-4">
-            <img src="images/am2.jpg" class="img-thumbnail" alt="Cinque Terre"> 
+            <img src="images/am2.jpg" class="img-thumbnail" alt="Cinque Terre">
         </div>
         <div class="col-md-4">
-            <img src="images/bg3.jpg" class="img-thumbnail" alt="Cinque Terre"> 
+            <img src="images/bg3.jpg" class="img-thumbnail" alt="Cinque Terre">
         </div>
       </div>
       <div class="row" style="margin-top:5px">
           <div class="col-md-4">
-            <img src="images/am1.jpg" class="img-thumbnail" alt="Cinque Terre"> 
+            <img src="images/am1.jpg" class="img-thumbnail" alt="Cinque Terre">
           </div>
           <div class="col-md-4">
-              <img src="images/am2.jpg" class="img-thumbnail" alt="Cinque Terre"> 
+              <img src="images/am2.jpg" class="img-thumbnail" alt="Cinque Terre">
           </div>
           <div class="col-md-4">
-              <img src="images/bg3.jpg" class="img-thumbnail" alt="Cinque Terre"> 
+              <img src="images/bg3.jpg" class="img-thumbnail" alt="Cinque Terre">
           </div>
        </div>
 
@@ -610,11 +610,11 @@
         <img class="modal-content" id="img01">
         <div id="caption"></div>
       </div>
-      
+
        <script>
       // Get the modal
       var modal = document.getElementById('myModal');
-      
+
       // Get the image and insert it inside the modal - use its "alt" text as a caption
       var img = document.getElementById('myImg');
       var modalImg = document.getElementById("img01");
@@ -624,18 +624,18 @@
         modalImg.src = this.src;
         captionText.innerHTML = this.alt;
       }
-      
+
       // Get the <span> element that closes the modal
       var span = document.getElementsByClassName("close")[0];
-      
+
       // When the user clicks on <span> (x), close the modal
-      span.onclick = function() { 
+      span.onclick = function() {
         modal.style.display = "none";
       }
       </script>
-      
-  
-  
+
+
+
     </div>
 <!--endOfGallery-->
 
@@ -651,7 +651,7 @@
 
         </div>
       </div>
-      
+
     </div>
   </div>
 
@@ -671,7 +671,7 @@
             <span class="font-weight-bold">directions</span>
           </h2>
           <div class="mapouter"><div class="gmap_canvas"><iframe width="454" height="316" id="gmap_canvas" src="https://maps.google.com/maps?q=mit%20thandavapura&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>Werbung: <a href="https://www.jetzt-drucken-lassen.de">jetzt-drucken-lassen.de</a></div><style>.mapouter{position:relative;text-align:right;height:316px;width:454px;}.gmap_canvas {overflow:hidden;background:none!important;height:316px;width:454px;}</style></div>
-          
+
         </div>
         <div style="color:white;font-size: 16px" class="col-md-2 contact-agileits-w3layouts mt-lg-0 mt-4">
           <h2>Quick Links</h2><br/><br/>
@@ -718,8 +718,8 @@
               <li>
                 <a href="#" class="fab fa-youtube icon-border youtube rounded-circle sp"> </a>
               </li>
-              
-              
+
+
             </ul>
           </div>
           <!-- //social icons -->
@@ -785,5 +785,5 @@
   <!-- //Js files -->
 
   <script src="js/bootstrap.min.js"></script>
-  
+
 </body>
