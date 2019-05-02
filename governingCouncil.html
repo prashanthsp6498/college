@@ -7,8 +7,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8" />
 	<meta name="keywords" content="Edulearn Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design"
-	/>
-	<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+  />
+  <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <!--<link href="css/style1.css" rel='stylesheet' type='text/css' media="all">-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -18,8 +18,6 @@
 <style>
 .mySlides {display:none;}
 </style>
-
-
 	<script>
 		addEventListener("load", function () {
 			setTimeout(hideURLbar, 0);
@@ -28,9 +26,33 @@
 		function hideURLbar() {
 			window.scrollTo(0, 1);
 		}
-	</script>
+  </script>
 
-	 <!-- This is for Displaying the original pic for Gallary-->
+<script>
+    // Get the modal
+    var modal = document.getElementById('myModal');
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById('myImg');
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    </script>
+
+
+  <!-- This is for Displaying the original pic for Gallary-->
   <style>
 
    #myImg {
@@ -133,12 +155,12 @@
 	<!-- Font-Awesome-Icons-Css -->
 	<link rel="stylesheet" href="css/fontawesome-all.css">
 	<!-- //Custom-Files -->
-	<link rel="stylesheet" href="tem.css">
+	<link rel="stylesheet" href="temp.css">
 	<!-- Web-Fonts -->
 	<link href="//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
 	 rel="stylesheet">
 	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-	<!-- //Web-Fonts -->
+  <!-- //Web-Fonts -->
 
 </head>
 
@@ -175,122 +197,122 @@
       </div>
     </div>
    </header>
-
   <!-- //header -->
 
-	<!-- banner -->
-	<div class="banner-agie">
+  <div class="navigation-w3ls" >
+      <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-nav">
+        <button class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+         aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+          <ul class="navbar-nav justify-content-center" style="margin-left:50px">
+            <li class="nav-item active">
+              <a class="nav-link text-white" href="index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item dropdown" style="margin-left:50px">
+              <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About Us
+              </a>
+                  <div class="dropdown-menu">
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="mitt.html">MITT</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="aboutUs.html">About MITT</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="aboutTrust.html">About Trust</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="visionAndMission.html">Vision and Mission</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">About Trustees</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="aboutPrinipal.html">About Principal</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="governingCouncil.html">Governing Council</a>
 
-	<div class="navigation-w3ls" >
-			<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-nav">
-				<button class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-				 aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
-					<ul class="navbar-nav justify-content-center" style="margin-left:50px">
-						<li class="nav-item active">
-							<a class="nav-link text-white" href="index.html">Home
-								<span class="sr-only">(current)</span>
-							</a>
-						</li>
-						<li class="nav-item dropdown" style="margin-left:50px">
-							<a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								About Us
-							</a>
-									<div class="dropdown-menu">
-											<div class="dropdown-divider"></div>
-											<a class="dropdown-item" href="mitt.html">MITT</a>
-											<div class="dropdown-divider"></div>
-											<a class="dropdown-item" href="aboutUs.html">About MITT</a>
-											<div class="dropdown-divider"></div>
-											<a class="dropdown-item" href="aboutTrust.html">About Trust</a>
-											<div class="dropdown-divider"></div>
-											<a class="dropdown-item" href="visionAndMission.html">Vision and Mission</a>
-											<div class="dropdown-divider"></div>
-											<a class="dropdown-item" href="#">About Trustees</a>
-											<div class="dropdown-divider"></div>
-											<a class="dropdown-item" href="aboutPrinipal.html">About Principal</a>
-											<div class="dropdown-divider"></div>
-											<a class="dropdown-item" href="governingCouncil.html">Governing Council</a>
+            </li>
+            <li class="nav-item dropdown" style="margin-left:50px">
+              <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Departments
+              </a>
+                  <div class="dropdown-menu">
 
-						</li>
-						<li class="nav-item dropdown" style="margin-left:50px">
-							<a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								Departments
-							</a>
-									<div class="dropdown-menu">
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="cse.html">Computer Science And Engineering</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="ece.html">Electronics and Communication Engineering</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="ise.html">Information Science and Engineering</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="mech.html">Mechanical Engineering</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="civil.html">Civil Engineering</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="physics.html">Physics</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="chemistry.html">Chemisry</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="math.html">Mathematics</a>
+                  </div>
 
-											<div class="dropdown-divider"></div>
-											<a class="dropdown-item" href="cse.html">Computer Science And Engineering</a>
-											<div class="dropdown-divider"></div>
-											<a class="dropdown-item" href="ece.html">Electronics and Communication Engineering</a>
-											<div class="dropdown-divider"></div>
-											<a class="dropdown-item" href="ise.html">Information Science and Engineering</a>
-											<div class="dropdown-divider"></div>
-											<a class="dropdown-item" href="mech.html">Mechanical Engineering</a>
-											<div class="dropdown-divider"></div>
-											<a class="dropdown-item" href="civil.html">Civil Engineering</a>
-											<div class="dropdown-divider"></div>
-											<a class="dropdown-item" href="social_media.html">Physics</a>
-											<div class="dropdown-divider"></div>
-											<a class="dropdown-item" href="social_media.html">Chemisry</a>
-											<div class="dropdown-divider"></div>
-											<a class="dropdown-item" href="social_media.html">Mathematics</a> 
-									</div>
-							
-							
-						
 
-						</li>
-						<li class="nav-item dropdown" style="margin-left:50px">
-							<a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								Campus Life
-							</a>
-							<div class="dropdown-menu">
-								<a class="dropdown-item" href="library.html">Library & Information Center</a>
-								<a class="dropdown-item" href="tap.html">Training & Placements</a>
-								<a class="dropdown-item" href="login.html">Sports</a>
-								<a class="dropdown-item" href="register.html">Gallery</a>
-								
 
-								<a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								Facility
-							</a>
-							<div class="dropdown-menu" style="margin-left: 50px">
-								<a class="dropdown-item" href="mitt.html">Canteen & Information Center</a>
-								<a class="dropdown-item" href="index.html">Transportation</a>
-							
-							</div>
 
-							</div>
-						</li>
-						<li class="nav-item" style="margin-left:50px">
-							<a class="nav-link text-white" href="commitee.html">Committee</a>
-						</li>
-						<li class="nav-item" style="margin-left:50px">
-							<a class="nav-link text-white" href="gallery.html">Gallery</a>
-						</li>
-						<li class="nav-item" style="margin-left:50px">
-							<a class="nav-link text-white" href="gallery.html">Downloads</a>
-						</li>
-						<li class="nav-item" style="margin-left:50px">
-							<a class="nav-link text-white" href="contact.html">Contact Us</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
-		</div>
-		<!-- //navigation -->
-	</div>
+
+            </li>
+        </div>
+            <li class="nav-item dropdown" style="margin-left:50px">
+              <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Campus Life
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="library.html">Library & Information Center</a>
+                <a class="dropdown-item" href="tap.html">Training & Placements</a>
+                <a class="dropdown-item" href="login.html">Sports</a>
+                <a class="dropdown-item" href="register.html">Gallery</a>
+
+
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Facility
+              </a>
+              <div class="dropdown-menu" style="margin-left: 50px">
+                <a class="dropdown-item" href="mitt.html">Canteen & Information Center</a>
+                <a class="dropdown-item" href="index.html">Transportation</a>
+
+              </div>
+
+              </div>
+            </li>
+            <li class="nav-item" style="margin-left:50px">
+              <a class="nav-link text-white" href="commitee.html">Committee</a>
+            </li>
+            <li class="nav-item" style="margin-left:50px">
+              <a class="nav-link text-white" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item" style="margin-left:50px">
+              <a class="nav-link text-white" href="gallery.html">Downloads</a>
+            </li>
+            <li class="nav-item" style="margin-left:50px">
+              <a class="nav-link text-white" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        
+      </nav>
+    </div>
+    
+
+
 	<!-- //banner -->
 
     <div class="row" style="margin-left: 30px">
         <div class="col-md-9">
     	<h1 style="text-align: center;margin-left: 00px;color:#49688e;font-weight: bold;">Governing Council</h1>
+
           <div class="table-responsive">
-          	<table class="table">
-          	</br>
+          	<table class="table" style="margin-left: 00px;color:black;">
+          	</br></br>
           		<tr>
           			<th>
           				SL<br/>NO.
