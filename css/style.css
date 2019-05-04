@@ -295,7 +295,7 @@ li.nav-item a {
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .nav-link.active,
 .nav-item a:hover {
-    color: #000 !important;
+    color: white !important;
 }
 
 .dropdown-item:hover,
