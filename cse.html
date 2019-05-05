@@ -756,7 +756,7 @@ technically competent engineers.</p></li>
       <div class="col-md-12"  style="margin-left:30px;margin-top:10px">
 
         <h1 style="color: #49688e;font-weight: bold;font-size: 40px;">Our Infrastructure and Laboratories</h1>
-        
+
 
        <!--<p style="color:black;margin-left:10px "><strong>setup state-of-art laboratories like</strong></p>-->
         <ol style="color:black;margin-left:20px;font-size:20px;" class="col-md-10">
@@ -801,15 +801,15 @@ technically competent engineers.</p></li>
 \            <br>
             <p style="color:;text-align: justify;">
               This laboratory will enable students to Differentiate the various testing techniques, Analyze the problem and derive suitable test cases, Apply suitable technique for designing of flow graph and Explain the need for planning and monitoring a process</p>
-          </li>          
+          </li>
           <li  style="color: #49688e;font-weight: bold;">Networks Laboratory</li>
-            <br>        
+            <br>
             <p style="color:black">
               This laboratory will enable students to  Demonstrate operation of network and its management commandsstudents can Simulate(Using NS2/NS3) and demonstrate the performance of GSM and CDMA.and also students can Implement data link layer and transport layer protocols.</p>
           </li>
           <br>
           <li><h2 style="color: #49688e;font-weight: bold;">Computer Graphics and visualization</h2>
-                  
+
             <p style="color:black;text-align: justify;">
               This laboratory will enable students to  Demonstrate operation of network and its management commandsstudents can Simulate(Using NS2/NS3) and demonstrate the performance of GSM and CDMA.and also students can Implement data link layer and transport layer protocols.</p>
           </li>
@@ -912,13 +912,29 @@ technically competent engineers.</p></li>
     <br><br>
     <div class="row" >
       <div class="col-md-4">
-        <img id="myImg" src="images/cse/index/slider1.jpg" alt="Something" class="img-thumbnail" alt="Cinque Terre">
+        <img id="myImg1" src="images/cse/index/slider1.jpg" alt="Something" class="img-thumbnail" alt="Cinque Terre">
       </div>
       <div class="col-md-4">
-          <img id="myImg" src="images/cse/index/slider4.JPG" alt="Something" class="img-thumbnail" alt="Cinque Terre">
+          <img id="myImg2" src="images/cse/index/slider4.JPG" alt="Something" class="img-thumbnail" alt="Cinque Terre">
       </div>
       <div class="col-md-4">
-          <img src="images/cse/index/slider3.JPG" class="img-thumbnail" alt="Cinque Terre">
+          <img id = "myImg3" src="images/cse/index/slider3.JPG" class="img-thumbnail" alt="Cinque Terre">
+      </div>
+    </div>
+		<div class="row" >
+      <div class="col-md-4">
+        <img id="myImg4" src="images/cse/Gallery/1.JPG" alt="Something" class="img-thumbnail" alt="Cinque Terre">
+      </div>
+      <div class="col-md-4">
+          <img id="myImg5" src="images/cse/Gallery/2.JPG" alt="Something" class="img-thumbnail" alt="Cinque Terre">
+      </div>
+      <div class="col-md-4">
+          <img id = "myImg6" src="images/cse/Gallery/3.JPG" class="img-thumbnail" alt="Cinque Terre">
+      </div>
+    </div>
+		<div class="row" >
+      <div class="col-md-4">
+        <img id="myImg7" src="images/cse/Gallery/4.JPG" alt="Something" class="img-thumbnail" alt="Cinque Terre">
       </div>
     </div>
     <!-- <div class="row" style="margin-top:5px">
@@ -947,7 +963,7 @@ technically competent engineers.</p></li>
 
       <!-- Picture Enlarge-->
       <!-- The Modal -->
-      <div id="myModal" class="modal">
+			<div id="myModal" class="modal">
         <span class="close">&times;</span>
         <img class="modal-content" id="img01">
         <div id="caption"></div>
@@ -958,14 +974,62 @@ technically competent engineers.</p></li>
       var modal = document.getElementById('myModal');
 
       // Get the image and insert it inside the modal - use its "alt" text as a caption
-      var img = document.getElementById('myImg');
+			var img1 = document.getElementById('myImg1');
+			var img2 = document.getElementById('myImg2');
+			var img3 = document.getElementById('myImg3');
+			var img4 = document.getElementById('myImg4');
+			var img5 = document.getElementById('myImg5');
+			var img6 = document.getElementById('myImg6');
+			var img7 = document.getElementById('myImg7');
+			//var img8 = document.getElementById('myImg8');
+			//var img9 = document.getElementById('myImg9');
       var modalImg = document.getElementById("img01");
       var captionText = document.getElementById("caption");
-      img.onclick = function(){
+      img1.onclick = function(){
         modal.style.display = "block";
         modalImg.src = this.src;
         captionText.innerHTML = this.alt;
       }
+			img2.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+			img3.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+			img4.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+			img5.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+			img6.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+			img7.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+			/*img8.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+			img9.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }*/
 
       // Get the <span> element that closes the modal
       var span = document.getElementsByClassName("close")[0];
