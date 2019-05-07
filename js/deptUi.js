@@ -36,12 +36,15 @@ $(document).ready(function(){
   $('#infrastruct').on('click',function(){
     $('.infra').show();
     $('#staff').hide();
+    $('.gallery').hide();
     $('.cont').hide();
+    $('.contact').hide();
     $('#activity').hide();
   });
 
   $('#gallery').on('click',function(){
     $('.gallery').show();
+    $('.infra').hide();
     $('#staff').hide();
     $('.cont').hide();
     $('.contact').hide();
@@ -53,5 +56,7 @@ $(document).ready(function(){
     $('#staff').hide();
     $('.cont').hide();
     $('.contact').hide();
+    $('.gallery').hide();
+    $('.infra').hide();
   });
 });
