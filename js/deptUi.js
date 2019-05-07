@@ -60,3 +60,12 @@ $(document).ready(function(){
     $('.infra').hide();
   });
 });
+
+
+//infrastructure
+$(document).ready(function(){
+  $('.lab_photos').hide();
+  $('#lab_pht').click(function(){
+    $('.lab_photos').toggle();   
+  });
+});
